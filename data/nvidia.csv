@@ -1,0 +1,43 @@
+sample,metric,fiscal_label,period_end,first_disclose,value,unit,basis,source_url,notes
+NVIDIA,operating_revenue,FY24Q2,2023-07-30,2023-08-23,13507,USD millions,GAAP consolidated,https://investor.nvidia.com,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY24Q2,2023-07-30,2023-08-23,70.1,percent,GAAP,https://investor.nvidia.com,
+NVIDIA,gross_profit,FY24Q2,2023-07-30,2023-08-23,9462,USD millions,GAAP,https://investor.nvidia.com,
+NVIDIA,operating_income,FY24Q2,2023-07-30,2023-08-23,6800,USD millions,GAAP,https://investor.nvidia.com,
+NVIDIA,data_center_revenue,FY24Q2,2023-07-30,2023-08-23,10323,USD millions,market platform (IR),https://investor.nvidia.com,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY24Q3,2023-10-29,2023-11-21,18120,USD millions,GAAP consolidated,https://investor.nvidia.com,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY24Q3,2023-10-29,2023-11-21,74.0,percent,GAAP,https://investor.nvidia.com,
+NVIDIA,gross_profit,FY24Q3,2023-10-29,2023-11-21,13400,USD millions,GAAP,https://investor.nvidia.com,
+NVIDIA,operating_income,FY24Q3,2023-10-29,2023-11-21,10417,USD millions,GAAP,https://investor.nvidia.com,
+NVIDIA,data_center_revenue,FY24Q3,2023-10-29,2023-11-21,14514,USD millions,market platform (IR),https://investor.nvidia.com,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY24Q4,2024-01-28,2024-02-21,22103,USD millions,GAAP consolidated,https://investor.nvidia.com/News/press-release-Details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY24Q4,2024-01-28,2024-02-21,76.0,percent,GAAP,https://investor.nvidia.com/News/press-release-Details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/,
+NVIDIA,gross_profit,FY24Q4,2024-01-28,2024-02-21,16791,USD millions,GAAP,https://investor.nvidia.com/News/press-release-Details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/,
+NVIDIA,operating_income,FY24Q4,2024-01-28,2024-02-21,13615,USD millions,GAAP,https://investor.nvidia.com/News/press-release-Details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/,
+NVIDIA,data_center_revenue,FY24Q4,2024-01-28,2024-02-21,18404,USD millions,market platform (IR),https://investor.nvidia.com/News/press-release-Details/2024/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2024/,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY25Q1,2024-04-28,2024-05-22,26044,USD millions,GAAP consolidated,https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2025/,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY25Q1,2024-04-28,2024-05-22,78.4,percent,GAAP,https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2025/,
+NVIDIA,gross_profit,FY25Q1,2024-04-28,2024-05-22,20418,USD millions,GAAP,https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2025/,
+NVIDIA,data_center_revenue,FY25Q1,2024-04-28,2024-05-22,22563,USD millions,market platform (IR),https://investor.nvidia.com/news/press-release-details/2024/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2025/,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY25Q2,2024-07-28,2024-08-28,30040,USD millions,GAAP consolidated,https://investor.nvidia.com,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY25Q2,2024-07-28,2024-08-28,75.1,percent,GAAP,https://investor.nvidia.com,
+NVIDIA,gross_profit,FY25Q2,2024-07-28,2024-08-28,22560,USD millions,GAAP,https://investor.nvidia.com,
+NVIDIA,data_center_revenue,FY25Q2,2024-07-28,2024-08-28,26272,USD millions,market platform (IR),https://investor.nvidia.com,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY25Q3,2024-10-27,2024-11-20,35082,USD millions,GAAP consolidated,https://investor.nvidia.com,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY25Q3,2024-10-27,2024-11-20,74.6,percent,GAAP,https://investor.nvidia.com,
+NVIDIA,gross_profit,FY25Q3,2024-10-27,2024-11-20,26171,USD millions,GAAP,https://investor.nvidia.com,
+NVIDIA,operating_income,FY25Q3,2024-10-27,2024-11-20,21869,USD millions,GAAP,https://investor.nvidia.com,
+NVIDIA,data_center_revenue,FY25Q3,2024-10-27,2024-11-20,30771,USD millions,market platform (IR),https://investor.nvidia.com,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY25Q4,2025-01-26,2025-02-26,39331,USD millions,GAAP consolidated,NVIDIA Quarterly Revenue Trend / IR,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY25Q4,2025-01-26,2025-02-26,73.0,percent,GAAP,NVIDIA Quarterly Revenue Trend / IR,
+NVIDIA,data_center_revenue,FY25Q4,2025-01-26,2025-02-26,35580,USD millions,market platform (IR),NVIDIA Quarterly Revenue Trend / IR,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY26Q1,2025-04-27,2025-05-28,44062,USD millions,GAAP consolidated,Q1FY26 revenue trend PDF + IR (GM dip: product/mix/H20),shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY26Q1,2025-04-27,2025-05-28,60.5,percent,GAAP,Q1FY26 revenue trend PDF + IR (GM dip: product/mix/H20),
+NVIDIA,data_center_revenue,FY26Q1,2025-04-27,2025-05-28,39112,USD millions,market platform (IR),Q1FY26 revenue trend PDF + IR (GM dip: product/mix/H20),代理：数据中心平台收入
+NVIDIA,operating_revenue,FY26Q2,2025-07-27,2025-08-27,46743,USD millions,GAAP consolidated,https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY26Q2,2025-07-27,2025-08-27,72.4,percent,GAAP,https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,
+NVIDIA,operating_income,FY26Q2,2025-07-27,2025-08-27,28440,USD millions,GAAP,https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,
+NVIDIA,data_center_revenue,FY26Q2,2025-07-27,2025-08-27,41096,USD millions,market platform (IR),https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,代理：数据中心平台收入
+NVIDIA,operating_revenue,FY26Q3,2025-10-26,2025-11-19,57006,USD millions,GAAP consolidated,https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,shovel seller: compute/networking
+NVIDIA,gross_margin_pct,FY26Q3,2025-10-26,2025-11-19,73.4,percent,GAAP,https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,
+NVIDIA,operating_income,FY26Q3,2025-10-26,2025-11-19,36010,USD millions,GAAP,https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,
+NVIDIA,data_center_revenue,FY26Q3,2025-10-26,2025-11-19,51215,USD millions,market platform (IR),https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2026/,代理：数据中心平台收入

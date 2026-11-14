@@ -1,0 +1,7 @@
+event_id,ticker,benchmark,disclose_date,event_trade_date,ret_pre60,ret_1d,ret_20d,ret_60d,rel_1d,rel_20d,rel_60d,mdd_post60,notes,method
+cisco_gm_peak,CSCO,GSPC,1998-08-11,1998-08-11,29.9%,-0.6%,-8.4%,-0.9%,-0.7%,-1.4%,-4.0%,-36.7%,US seller GM peak disclosure,returns vs prior close (t=-1); event day = first tradable on/after disclosure; after-hours → next session
+cisco_rev_peak,CSCO,GSPC,2001-02-06,2001-02-06,-33.7%,-10.1%,-30.6%,-46.0%,-9.2%,-25.5%,-41.4%,-61.9%,US seller revenue peak disclosure,returns vs prior close (t=-1); event day = first tradable on/after disclosure; after-hours → next session
+verizon_fcf_proxy,VZ,GSPC,2001-05-01,2001-05-01,6.7%,3.3%,-1.9%,2.8%,1.9%,-1.8%,6.8%,-9.0%,Buyer FCF stress disclosure proxy,returns vs prior close (t=-1); event day = first tradable on/after disclosure; after-hours → next session
+conch_gm_peak,0914HK,000001SS,2004-09-15,2004-09-15,24.7%,3.1%,8.9%,-10.4%,-2.2%,2.1%,-12.2%,-28.7%,Conch interim GM peak disclosure proxy,returns vs prior close (t=-1); event day = first tradable on/after disclosure; after-hours → next session
+nvda_gm_stage_high,NVDA,GSPC,2024-05-22,2024-05-22,21.2%,8.8%,32.7%,36.3%,9.9%,29.2%,29.3%,-27.0%,NVIDIA GM stage-high print,returns vs prior close (t=-1); event day = first tradable on/after disclosure; after-hours → next session
+googl_fcf_first_neg,GOOGL,GSPC,2026-07-23,2026-07-23,-2.3%,-6.5%,-0.4%,-0.4%,-5.4%,-2.3%,-2.5%,-12.4%,Alphabet first negative FCF print,returns vs prior close (t=-1); event day = first tradable on/after disclosure; after-hours → next session

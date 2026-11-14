@@ -1,0 +1,73 @@
+sample,metric,fiscal_label,period_end,first_disclose,value,unit,basis,source_url,notes
+Alphabet,operating_revenue,2023Q4,2023-12-31,2024-01-30,86310,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2023Q4,2023-12-31,2024-01-30,48735,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2023Q4,2023-12-31,2024-01-30,56.47,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2023Q4,2023-12-31,2024-01-30,18915,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2023Q4,2023-12-31,2024-01-30,11019,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2023Q4,2023-12-31,2024-01-30,7896,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2024Q1,2024-03-31,2024-04-25,80539,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2024Q1,2024-03-31,2024-04-25,46827,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2024Q1,2024-03-31,2024-04-25,58.14,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2024Q1,2024-03-31,2024-04-25,28848,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2024Q1,2024-03-31,2024-04-25,12012,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2024Q1,2024-03-31,2024-04-25,16836,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2024Q2,2024-06-30,2024-07-23,84742,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2024Q2,2024-06-30,2024-07-23,49235,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2024Q2,2024-06-30,2024-07-23,58.1,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2024Q2,2024-06-30,2024-07-23,26640,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2024Q2,2024-06-30,2024-07-23,13186,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2024Q2,2024-06-30,2024-07-23,13454,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2024Q3,2024-09-30,2024-10-29,88268,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2024Q3,2024-09-30,2024-10-29,51794,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2024Q3,2024-09-30,2024-10-29,58.68,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2024Q3,2024-09-30,2024-10-29,30698,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2024Q3,2024-09-30,2024-10-29,13061,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2024Q3,2024-09-30,2024-10-29,17637,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2024Q4,2024-12-31,2025-02-04,96469,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2024Q4,2024-12-31,2025-02-04,55856,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2024Q4,2024-12-31,2025-02-04,57.9,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2024Q4,2024-12-31,2025-02-04,39113,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2024Q4,2024-12-31,2025-02-04,14276,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2024Q4,2024-12-31,2025-02-04,24837,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2025Q1,2025-03-31,2025-04-24,90234,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2025Q1,2025-03-31,2025-04-24,53873,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2025Q1,2025-03-31,2025-04-24,59.7,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2025Q1,2025-03-31,2025-04-24,36150,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2025Q1,2025-03-31,2025-04-24,17197,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2025Q1,2025-03-31,2025-04-24,18953,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2025Q2,2025-06-30,2025-07-23,96428,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2025Q2,2025-06-30,2025-07-23,57389,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2025Q2,2025-06-30,2025-07-23,59.51,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2025Q2,2025-06-30,2025-07-23,27747,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2025Q2,2025-06-30,2025-07-23,22446,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2025Q2,2025-06-30,2025-07-23,5301,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2025Q3,2025-09-30,2025-10-29,102346,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2025Q3,2025-09-30,2025-10-29,60977,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2025Q3,2025-09-30,2025-10-29,59.58,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2025Q3,2025-09-30,2025-10-29,48414,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2025Q3,2025-09-30,2025-10-29,23953,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2025Q3,2025-09-30,2025-10-29,24461,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2025Q4,2025-12-31,2026-02-03,113829,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2025Q4,2025-12-31,2026-02-03,68062,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2025Q4,2025-12-31,2026-02-03,59.79,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2025Q4,2025-12-31,2026-02-03,52402,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2025Q4,2025-12-31,2026-02-03,27851,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2025Q4,2025-12-31,2026-02-03,24551,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2026Q1,2026-03-31,2026-04-23,109896,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2026Q1,2026-03-31,2026-04-23,68625,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2026Q1,2026-03-31,2026-04-23,62.45,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2026Q1,2026-03-31,2026-04-23,45790,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2026Q1,2026-03-31,2026-04-23,35674,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2026Q1,2026-03-31,2026-04-23,10116,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2026Q2,2026-06-30,2026-07-23,119796,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2026Q2,2026-06-30,2026-07-23,73853,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2026Q2,2026-06-30,2026-07-23,61.65,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2026Q2,2026-06-30,2026-07-23,39069,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2026Q2,2026-06-30,2026-07-23,44924,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2026Q2,2026-06-30,2026-07-23,-5855,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致
+Alphabet,operating_revenue,2026Q3,2026-09-30,2026-10-29,127577,USD millions,GAAP consolidated,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),buyer sample: cloud/AI infra investor; group口径
+Alphabet,gross_profit,2026Q3,2026-09-30,2026-10-29,76158,USD millions,GAAP,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,gross_margin_pct,2026Q3,2026-09-30,2026-10-29,59.7,percent,GP/Rev,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,operating_cash_flow,2026Q3,2026-09-30,2026-10-29,42290,USD millions,GAAP cash from ops,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),
+Alphabet,cash_capex,2026Q3,2026-09-30,2026-10-29,51355,USD millions,Additions to PP&E,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),现金 CapEx
+Alphabet,free_cash_flow,2026Q3,2026-09-30,2026-10-29,-9065,USD millions,OCF − cash CapEx,https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived),FCF定义与本站一致

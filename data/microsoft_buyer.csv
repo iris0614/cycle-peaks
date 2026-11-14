@@ -1,0 +1,11 @@
+sample,metric,fiscal_label,period_end,first_disclose,value,unit,basis,source_url,notes
+Microsoft,cash_capex,FY25Q3,2025-03-31,2025-04-30,16745,USD millions,Cash paid for PP&E,https://www.microsoft.com/en-us/investor,cash PP&E; FCF from FY25 Q3 call; 交叉验证买方
+Microsoft,free_cash_flow,FY25Q3,2025-03-31,2025-04-30,20299,USD millions,Company FCF (OCF−cash CapEx),https://www.microsoft.com/en-us/investor,cash PP&E; FCF from FY25 Q3 call
+Microsoft,cash_capex,FY25Q4,2025-06-30,2025-07-30,17079,USD millions,Cash paid for PP&E,https://www.microsoft.com/en-us/investor,cash PP&E; FCF from FY25 Q4 call; 交叉验证买方
+Microsoft,free_cash_flow,FY25Q4,2025-06-30,2025-07-30,25568,USD millions,Company FCF (OCF−cash CapEx),https://www.microsoft.com/en-us/investor,cash PP&E; FCF from FY25 Q4 call
+Microsoft,cash_capex,FY26Q1,2025-09-30,2025-10-29,19400,USD millions,Cash paid for PP&E,https://www.microsoft.com/en-us/investor,cash PP&E ~19.4B; FCF 25.7B — FY26 Q1 call; 交叉验证买方
+Microsoft,free_cash_flow,FY26Q1,2025-09-30,2025-10-29,25700,USD millions,Company FCF (OCF−cash CapEx),https://www.microsoft.com/en-us/investor,cash PP&E ~19.4B; FCF 25.7B — FY26 Q1 call
+Microsoft,cash_capex,FY26Q2,2025-12-31,2026-01-28,29900,USD millions,Cash paid for PP&E,https://www.microsoft.com/en-us/investor,cash PP&E 29.9B; FCF 5.9B — FY26 Q2 call; 交叉验证买方
+Microsoft,free_cash_flow,FY26Q2,2025-12-31,2026-01-28,5900,USD millions,Company FCF (OCF−cash CapEx),https://www.microsoft.com/en-us/investor,cash PP&E 29.9B; FCF 5.9B — FY26 Q2 call
+Microsoft,total_capex_incl_leases,FY26Q1,2025-09-30,2025-10-29,34900,USD millions,CapEx incl. finance leases,https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q1,口径不同于现金 CapEx
+Microsoft,total_capex_incl_leases,FY26Q2,2025-12-31,2026-01-28,37500,USD millions,CapEx incl. finance leases,https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q2,

@@ -1,0 +1,10 @@
+cycle,layer,ticker,event_id,fiscal_position,first_disclose_or_proxy,confirm_rule,status,notes
+US,seller_gm,CSCO,cisco_gm_peak,FY1998 Q4 end 1998-07-25,1998-08-11,窗口内GAAP毛利率最高点；阶段高点=同,confirmed_window_max,既有序列 65.73%
+US,seller_rev,CSCO,cisco_rev_peak,FY2001 Q2 end 2001-01-27,2001-02-06,窗口内收入绝对额最高点,confirmed_window_max,$6748M
+US,buyer_fcf_neg,VZ,verizon_fcf_neg,2001Q1,2001-05-01,单季FCF=OCF-capex首次转负（样本季）,confirmed_sample,BellSouth同期亦转负；披露日近似
+US,buyer_capex_cut,VZ,verizon_capex_cut,2002Q1,2002-05-01,现金CapEx较峰值实质收缩,confirmed_sample,与BellSouth同相位
+CN,seller_gm,0914.HK,conch_gm_peak,2004H1,2004-09-15,半年度毛利率窗口峰；非完整单季,confirmed_semiannual,47.7%；披露日近似中报
+CN,downstream_infra,,china_infra_pulse,2003FY,2004-01-20,基建投资同比窗口脉冲,confirmed_annual,+45.8%；年频
+AI,seller_gm,NVDA,nvda_gm_stage_high,FY2025 Q1 end 2024-04-28,2024-05-22,AI主升段内GAAP毛利率阶段高点；后续未超越则升为窗口峰,stage_high_pending_window_end,78.4%；收入仍升→非收入峰
+AI,buyer_fcf_neg,GOOGL,googl_fcf_first_neg,2026Q2,2026-07-23,单季FCF首次转负；滚动四季待核,confirmed_single_quarter,CapEx主导；OCF仍强
+AI,buyer_fcf_neg2,GOOGL,googl_fcf_second_neg,2026Q3,2026-10-29,连续第二季FCF为负,confirmed_single_quarter,CapEx续升至$51.4B
