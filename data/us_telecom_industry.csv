@@ -1,0 +1,5 @@
+sample,metric,period,value,unit,basis,source_url,notes
+US_Telecom_Industry,annual_capex,1998,60852,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention
+US_Telecom_Industry,annual_capex,1999,82337,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention
+US_Telecom_Industry,annual_capex,2000,113115,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention
+US_Telecom_Industry,annual_capex,2001,92583,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention

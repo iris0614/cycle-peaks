@@ -1,0 +1,19 @@
+sample,metric,period,value,unit,basis,source_url,notes
+Verizon,operating_cash_flow,2001-03-31,3102,USD millions,GAAP,SEC,Q1 three months; FCF deeply negative from high capex
+Verizon,cash_capex,2001-03-31,4478,USD millions,Capital expenditures,SEC,Q1 three months; FCF deeply negative from high capex
+Verizon,free_cash_flow,2001-03-31,-1376,USD millions,OCF−capex,computed,Q1 three months; FCF deeply negative from high capex
+Verizon,operating_cash_flow,2001-06-30,4556,USD millions,GAAP,SEC,Q2=H1 7658/9163 − Q1
+Verizon,cash_capex,2001-06-30,4685,USD millions,Capital expenditures,SEC,Q2=H1 7658/9163 − Q1
+Verizon,free_cash_flow,2001-06-30,-129,USD millions,OCF−capex,computed,Q2=H1 7658/9163 − Q1
+Verizon,operating_cash_flow,2001-09-30,5438,USD millions,GAAP,SEC,Q3=9M 13096/12477 − H1
+Verizon,cash_capex,2001-09-30,3314,USD millions,Capital expenditures,SEC,Q3=9M 13096/12477 − H1
+Verizon,free_cash_flow,2001-09-30,2124,USD millions,OCF−capex,computed,Q3=9M 13096/12477 − H1
+Verizon,operating_cash_flow,2002-03-31,4478,USD millions,GAAP,SEC,Q1; capex cut; FCF positive
+Verizon,cash_capex,2002-03-31,2374,USD millions,Capital expenditures,SEC,Q1; capex cut; FCF positive
+Verizon,free_cash_flow,2002-03-31,2104,USD millions,OCF−capex,computed,Q1; capex cut; FCF positive
+Verizon,operating_cash_flow,2002-06-30,5564,USD millions,GAAP,SEC,Q2=H1 10042/5510 − Q1
+Verizon,cash_capex,2002-06-30,3136,USD millions,Capital expenditures,SEC,Q2=H1 10042/5510 − Q1
+Verizon,free_cash_flow,2002-06-30,2428,USD millions,OCF−capex,computed,Q2=H1 10042/5510 − Q1
+Verizon,operating_cash_flow,2002-09-30,6036,USD millions,GAAP,SEC,Q3=9M 16078/8108 − H1
+Verizon,cash_capex,2002-09-30,2598,USD millions,Capital expenditures,SEC,Q3=9M 16078/8108 − H1
+Verizon,free_cash_flow,2002-09-30,3438,USD millions,OCF−capex,computed,Q3=9M 16078/8108 − H1

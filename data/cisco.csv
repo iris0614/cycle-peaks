@@ -1,0 +1,105 @@
+sample,metric,period,value,unit,basis,source_url,notes
+Cisco,operating_revenue,1997-10-25,1868.717,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q1; shovel seller: routing/switching; 
+Cisco,COGS,1997-10-25,652.181,USD millions,GAAP,SEC,FY1998 Q1
+Cisco,gross_profit,1997-10-25,1216.536,USD millions,GAAP,SEC,FY1998 Q1
+Cisco,gross_margin_pct,1997-10-25,65.1,percent,GAAP GM/Sales,SEC,FY1998 Q1
+Cisco,operating_income_gaap,1997-10-25,475.279,USD millions,GAAP,SEC,FY1998 Q1; 
+Cisco,operating_revenue,1998-01-24,2016.315,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q2; shovel seller: routing/switching; 
+Cisco,COGS,1998-01-24,696.774,USD millions,GAAP,SEC,FY1998 Q2
+Cisco,gross_profit,1998-01-24,1319.541,USD millions,GAAP,SEC,FY1998 Q2
+Cisco,gross_margin_pct,1998-01-24,65.44,percent,GAAP GM/Sales,SEC,FY1998 Q2
+Cisco,operating_income_gaap,1998-01-24,659.693,USD millions,GAAP,SEC,FY1998 Q2; 
+Cisco,operating_revenue,1998-04-25,2183.756,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q3; shovel seller: routing/switching; IPR&D 418.7
+Cisco,COGS,1998-04-25,749.727,USD millions,GAAP,SEC,FY1998 Q3
+Cisco,gross_profit,1998-04-25,1434.029,USD millions,GAAP,SEC,FY1998 Q3
+Cisco,gross_margin_pct,1998-04-25,65.67,percent,GAAP GM/Sales,SEC,FY1998 Q3
+Cisco,operating_income_gaap,1998-04-25,272.736,USD millions,GAAP,SEC,FY1998 Q3; IPR&D 418.7
+Cisco,operating_revenue,1998-07-25,2389.989,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q4; shovel seller: routing/switching; GM% window max 65.73%
+Cisco,COGS,1998-07-25,818.935,USD millions,GAAP,SEC,FY1998 Q4
+Cisco,gross_profit,1998-07-25,1571.054,USD millions,GAAP,SEC,FY1998 Q4
+Cisco,gross_margin_pct,1998-07-25,65.73,percent,GAAP GM/Sales,SEC,FY1998 Q4
+Cisco,operating_income_gaap,1998-07-25,744.491,USD millions,GAAP,SEC,FY1998 Q4; GM% window max 65.73%
+Cisco,operating_revenue,1998-10-24,2588,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q1; shovel seller: routing/switching; 
+Cisco,COGS,1998-10-24,894,USD millions,GAAP,SEC,FY1999 Q1
+Cisco,gross_profit,1998-10-24,1694,USD millions,GAAP,SEC,FY1999 Q1
+Cisco,gross_margin_pct,1998-10-24,65.46,percent,GAAP GM/Sales,SEC,FY1999 Q1
+Cisco,operating_income_gaap,1998-10-24,728,USD millions,GAAP,SEC,FY1999 Q1; 
+Cisco,operating_revenue,1999-01-23,2827,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q2; shovel seller: routing/switching; IPR&D 349
+Cisco,COGS,1999-01-23,985,USD millions,GAAP,SEC,FY1999 Q2
+Cisco,gross_profit,1999-01-23,1842,USD millions,GAAP,SEC,FY1999 Q2
+Cisco,gross_margin_pct,1999-01-23,65.16,percent,GAAP GM/Sales,SEC,FY1999 Q2
+Cisco,operating_income_gaap,1999-01-23,476,USD millions,GAAP,SEC,FY1999 Q2; IPR&D 349
+Cisco,operating_revenue,1999-05-01,3147,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q3; shovel seller: routing/switching; 
+Cisco,COGS,1999-05-01,1102,USD millions,GAAP,SEC,FY1999 Q3
+Cisco,gross_profit,1999-05-01,2045,USD millions,GAAP,SEC,FY1999 Q3
+Cisco,gross_margin_pct,1999-05-01,64.98,percent,GAAP GM/Sales,SEC,FY1999 Q3
+Cisco,operating_income_gaap,1999-05-01,875,USD millions,GAAP,SEC,FY1999 Q3; 
+Cisco,operating_revenue,1999-07-31,3558,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q4; shovel seller: routing/switching; pro forma OI newsroom
+Cisco,COGS,1999-07-31,1261,USD millions,GAAP,SEC,FY1999 Q4
+Cisco,gross_profit,1999-07-31,2297,USD millions,GAAP,SEC,FY1999 Q4
+Cisco,gross_margin_pct,1999-07-31,64.56,percent,GAAP GM/Sales,SEC,FY1999 Q4
+Cisco,operating_income_gaap,1999-07-31,794,USD millions,GAAP,SEC,FY1999 Q4; pro forma OI newsroom
+Cisco,operating_income_proforma,1999-07-31,969,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY1999 Q4
+Cisco,operating_revenue,1999-10-30,3877,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q1; shovel seller: routing/switching; 
+Cisco,COGS,1999-10-30,1364,USD millions,GAAP,SEC,FY2000 Q1
+Cisco,gross_profit,1999-10-30,2513,USD millions,GAAP,SEC,FY2000 Q1
+Cisco,gross_margin_pct,1999-10-30,64.82,percent,GAAP GM/Sales,SEC,FY2000 Q1
+Cisco,operating_income_gaap,1999-10-30,685,USD millions,GAAP,SEC,FY2000 Q1; 
+Cisco,operating_income_proforma,1999-10-30,1090,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q1
+Cisco,operating_revenue,2000-01-29,4350,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q2; shovel seller: routing/switching; Nasdaq telecom peak Mar 2000 shortly after
+Cisco,COGS,2000-01-29,1536,USD millions,GAAP,SEC,FY2000 Q2
+Cisco,gross_profit,2000-01-29,2814,USD millions,GAAP,SEC,FY2000 Q2
+Cisco,gross_margin_pct,2000-01-29,64.69,percent,GAAP GM/Sales,SEC,FY2000 Q2
+Cisco,operating_income_gaap,2000-01-29,1059,USD millions,GAAP,SEC,FY2000 Q2; Nasdaq telecom peak Mar 2000 shortly after
+Cisco,operating_income_proforma,2000-01-29,1161,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q2
+Cisco,operating_revenue,2000-04-29,4919,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q3; shovel seller: routing/switching; 
+Cisco,COGS,2000-04-29,1748,USD millions,GAAP,SEC,FY2000 Q3
+Cisco,gross_profit,2000-04-29,3171,USD millions,GAAP,SEC,FY2000 Q3
+Cisco,gross_margin_pct,2000-04-29,64.46,percent,GAAP GM/Sales,SEC,FY2000 Q3
+Cisco,operating_income_gaap,2000-04-29,744,USD millions,GAAP,SEC,FY2000 Q3; 
+Cisco,operating_income_proforma,2000-04-29,1308,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q3
+Cisco,operating_revenue,2000-07-29,5720,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q4; shovel seller: routing/switching; 
+Cisco,COGS,2000-07-29,2058,USD millions,GAAP,SEC,FY2000 Q4
+Cisco,gross_profit,2000-07-29,3662,USD millions,GAAP,SEC,FY2000 Q4
+Cisco,gross_margin_pct,2000-07-29,64.02,percent,GAAP GM/Sales,SEC,FY2000 Q4
+Cisco,operating_income_gaap,2000-07-29,770,USD millions,GAAP,SEC,FY2000 Q4; 
+Cisco,operating_income_proforma,2000-07-29,1515,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q4
+Cisco,operating_revenue,2000-10-28,6519,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q1; shovel seller: routing/switching; 
+Cisco,COGS,2000-10-28,2378,USD millions,GAAP,SEC,FY2001 Q1
+Cisco,gross_profit,2000-10-28,4141,USD millions,GAAP,SEC,FY2001 Q1
+Cisco,gross_margin_pct,2000-10-28,63.52,percent,GAAP GM/Sales,SEC,FY2001 Q1
+Cisco,operating_income_gaap,2000-10-28,902,USD millions,GAAP,SEC,FY2001 Q1; 
+Cisco,operating_revenue,2001-01-27,6748,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q2; shovel seller: routing/switching; Revenue & GP$ peak
+Cisco,COGS,2001-01-27,2581,USD millions,GAAP,SEC,FY2001 Q2
+Cisco,gross_profit,2001-01-27,4167,USD millions,GAAP,SEC,FY2001 Q2
+Cisco,gross_margin_pct,2001-01-27,61.75,percent,GAAP GM/Sales,SEC,FY2001 Q2
+Cisco,operating_income_gaap,2001-01-27,1032,USD millions,GAAP,SEC,FY2001 Q2; Revenue & GP$ peak
+Cisco,operating_income_proforma,2001-01-27,1573,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2001 Q2
+Cisco,operating_revenue,2001-04-28,4728,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q3; shovel seller: routing/switching; Excess inventory charge 2249 in COGS
+Cisco,COGS,2001-04-28,4400,USD millions,GAAP,SEC,FY2001 Q3
+Cisco,gross_profit,2001-04-28,328,USD millions,GAAP,SEC,FY2001 Q3
+Cisco,gross_margin_pct,2001-04-28,6.94,percent,GAAP GM/Sales,SEC,FY2001 Q3
+Cisco,operating_income_gaap,2001-04-28,-3801,USD millions,GAAP,SEC,FY2001 Q3; Excess inventory charge 2249 in COGS
+Cisco,operating_income_proforma,2001-04-28,83,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2001 Q3
+Cisco,gross_profit_ex_inventory_charge,2001-04-28,2577,USD millions,Adjusted,newsroom,excl 2249 inventory charge
+Cisco,operating_revenue,2001-07-28,4298,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q4; shovel seller: routing/switching; 
+Cisco,COGS,2001-07-28,1862,USD millions,GAAP,SEC,FY2001 Q4
+Cisco,gross_profit,2001-07-28,2436,USD millions,GAAP,SEC,FY2001 Q4
+Cisco,gross_margin_pct,2001-07-28,56.68,percent,GAAP GM/Sales,SEC,FY2001 Q4
+Cisco,operating_income_gaap,2001-07-28,-137,USD millions,GAAP,SEC,FY2001 Q4; 
+Cisco,operating_revenue,2001-10-27,4448,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q1; shovel seller: routing/switching; 
+Cisco,COGS,2001-10-27,1756,USD millions,GAAP,SEC,FY2002 Q1
+Cisco,gross_profit,2001-10-27,2692,USD millions,GAAP,SEC,FY2002 Q1
+Cisco,gross_margin_pct,2001-10-27,60.52,percent,GAAP GM/Sales,SEC,FY2002 Q1
+Cisco,operating_income_gaap,2001-10-27,345,USD millions,GAAP,SEC,FY2002 Q1; 
+Cisco,operating_revenue,2002-01-26,4816,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q2; shovel seller: routing/switching; 
+Cisco,COGS,2002-01-26,1846,USD millions,GAAP,SEC,FY2002 Q2
+Cisco,gross_profit,2002-01-26,2970,USD millions,GAAP,SEC,FY2002 Q2
+Cisco,gross_margin_pct,2002-01-26,61.67,percent,GAAP GM/Sales,SEC,FY2002 Q2
+Cisco,operating_income_gaap,2002-01-26,753,USD millions,GAAP,SEC,FY2002 Q2; 
+Cisco,operating_revenue,2002-04-27,4822,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q3; shovel seller: routing/switching; sales only
+Cisco,operating_revenue,2002-07-27,4829,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q4; shovel seller: routing/switching; 
+Cisco,COGS,2002-07-27,1546,USD millions,GAAP,SEC,FY2002 Q4
+Cisco,gross_profit,2002-07-27,3283,USD millions,GAAP,SEC,FY2002 Q4
+Cisco,gross_margin_pct,2002-07-27,67.99,percent,GAAP GM/Sales,SEC,FY2002 Q4
+Cisco,operating_income_gaap,2002-07-27,947,USD millions,GAAP,SEC,FY2002 Q4; 

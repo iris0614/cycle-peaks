@@ -1,0 +1,2 @@
+sample,metric,period,value,unit,basis,source_url,notes
+China_Steel_Rebar,simulated_ton_profit_series,2002-2008,,CNY/ton,formula only,public industry formula,缺口：无连续同口径现货序列故不编造峰；公式=螺纹−1.6×铁矿−0.5×焦炭−加工成本

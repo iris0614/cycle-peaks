@@ -1,0 +1,10 @@
+sample,metric,period,value,unit,basis,source_url,notes
+China_Commodity_Housing_Sales_Area,annual_yoy,2000,28.03,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2001,20.25,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2002,19.62,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2003,25.77,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2004,13.39,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2005,45.13,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2006,11.48,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2007,25.05,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2008,-14.72,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房

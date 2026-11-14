@@ -1,0 +1,35 @@
+<svg viewBox="0 0 860 270" role="img" xmlns="http://www.w3.org/2000/svg">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">Cisco 营业收入（百万美元）</text>
+<line x1="48" y1="36.0" x2="840" y2="36.0" stroke="#e8e4da" stroke-width="1"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">7081</text>
+<line x1="48" y1="82.5" x2="840" y2="82.5" stroke="#e8e4da" stroke-width="1"/>
+<text x="42" y="86.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">5311</text>
+<line x1="48" y1="129.0" x2="840" y2="129.0" stroke="#e8e4da" stroke-width="1"/>
+<text x="42" y="133.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">3540</text>
+<line x1="48" y1="175.5" x2="840" y2="175.5" stroke="#e8e4da" stroke-width="1"/>
+<text x="42" y="179.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">1770</text>
+<line x1="48" y1="222.0" x2="840" y2="222.0" stroke="#e8e4da" stroke-width="1"/>
+<text x="42" y="226.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">0</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.4" points="48.0,154.0 161.1,120.2 274.3,92.8 387.4,50.8 500.6,44.7 613.7,97.8 726.9,105.2 840.0,95.3"/>
+<circle cx="48.0" cy="154.0" r="3.2" fill="#0b5f6b"/>
+<circle cx="161.1" cy="120.2" r="3.2" fill="#0b5f6b"/>
+<circle cx="274.3" cy="92.8" r="3.2" fill="#0b5f6b"/>
+<circle cx="387.4" cy="50.8" r="3.2" fill="#0b5f6b"/>
+<circle cx="500.6" cy="44.7" r="3.2" fill="#0b5f6b"/>
+<circle cx="613.7" cy="97.8" r="3.2" fill="#0b5f6b"/>
+<circle cx="726.9" cy="105.2" r="3.2" fill="#0b5f6b"/>
+<circle cx="840.0" cy="95.3" r="3.2" fill="#0b5f6b"/>
+<text x="48.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">99Q1</text>
+<text x="161.1" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">00Q1</text>
+<text x="274.3" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">00Q3</text>
+<text x="387.4" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">01Q1</text>
+<text x="500.6" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">01Q2</text>
+<text x="613.7" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">01Q3</text>
+<text x="726.9" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">02Q1</text>
+<text x="840.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">02Q3</text>
+<rect x="48" y="234" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="243" fill="#333" font-size="11" font-family="sans-serif">净销售额</text>
+
+<line x1="500.6" y1="36" x2="500.6" y2="222" stroke="#b45309" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="504.6" y="50" fill="#b45309" font-size="11" font-family="sans-serif">收入峰 $6748M</text>
+</svg>

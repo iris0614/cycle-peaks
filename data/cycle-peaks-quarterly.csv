@@ -1,0 +1,283 @@
+sample,metric,period,value,unit,basis,source_url,notes
+Cisco,operating_revenue,1997-10-25,1868.717,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q1; shovel seller: routing/switching; 
+Cisco,COGS,1997-10-25,652.181,USD millions,GAAP,SEC,FY1998 Q1
+Cisco,gross_profit,1997-10-25,1216.536,USD millions,GAAP,SEC,FY1998 Q1
+Cisco,gross_margin_pct,1997-10-25,65.1,percent,GAAP GM/Sales,SEC,FY1998 Q1
+Cisco,operating_income_gaap,1997-10-25,475.279,USD millions,GAAP,SEC,FY1998 Q1; 
+Cisco,operating_revenue,1998-01-24,2016.315,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q2; shovel seller: routing/switching; 
+Cisco,COGS,1998-01-24,696.774,USD millions,GAAP,SEC,FY1998 Q2
+Cisco,gross_profit,1998-01-24,1319.541,USD millions,GAAP,SEC,FY1998 Q2
+Cisco,gross_margin_pct,1998-01-24,65.44,percent,GAAP GM/Sales,SEC,FY1998 Q2
+Cisco,operating_income_gaap,1998-01-24,659.693,USD millions,GAAP,SEC,FY1998 Q2; 
+Cisco,operating_revenue,1998-04-25,2183.756,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q3; shovel seller: routing/switching; IPR&D 418.7
+Cisco,COGS,1998-04-25,749.727,USD millions,GAAP,SEC,FY1998 Q3
+Cisco,gross_profit,1998-04-25,1434.029,USD millions,GAAP,SEC,FY1998 Q3
+Cisco,gross_margin_pct,1998-04-25,65.67,percent,GAAP GM/Sales,SEC,FY1998 Q3
+Cisco,operating_income_gaap,1998-04-25,272.736,USD millions,GAAP,SEC,FY1998 Q3; IPR&D 418.7
+Cisco,operating_revenue,1998-07-25,2389.989,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1998 Q4; shovel seller: routing/switching; GM% window max 65.73%
+Cisco,COGS,1998-07-25,818.935,USD millions,GAAP,SEC,FY1998 Q4
+Cisco,gross_profit,1998-07-25,1571.054,USD millions,GAAP,SEC,FY1998 Q4
+Cisco,gross_margin_pct,1998-07-25,65.73,percent,GAAP GM/Sales,SEC,FY1998 Q4
+Cisco,operating_income_gaap,1998-07-25,744.491,USD millions,GAAP,SEC,FY1998 Q4; GM% window max 65.73%
+Cisco,operating_revenue,1998-10-24,2588,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q1; shovel seller: routing/switching; 
+Cisco,COGS,1998-10-24,894,USD millions,GAAP,SEC,FY1999 Q1
+Cisco,gross_profit,1998-10-24,1694,USD millions,GAAP,SEC,FY1999 Q1
+Cisco,gross_margin_pct,1998-10-24,65.46,percent,GAAP GM/Sales,SEC,FY1999 Q1
+Cisco,operating_income_gaap,1998-10-24,728,USD millions,GAAP,SEC,FY1999 Q1; 
+Cisco,operating_revenue,1999-01-23,2827,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q2; shovel seller: routing/switching; IPR&D 349
+Cisco,COGS,1999-01-23,985,USD millions,GAAP,SEC,FY1999 Q2
+Cisco,gross_profit,1999-01-23,1842,USD millions,GAAP,SEC,FY1999 Q2
+Cisco,gross_margin_pct,1999-01-23,65.16,percent,GAAP GM/Sales,SEC,FY1999 Q2
+Cisco,operating_income_gaap,1999-01-23,476,USD millions,GAAP,SEC,FY1999 Q2; IPR&D 349
+Cisco,operating_revenue,1999-05-01,3147,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q3; shovel seller: routing/switching; 
+Cisco,COGS,1999-05-01,1102,USD millions,GAAP,SEC,FY1999 Q3
+Cisco,gross_profit,1999-05-01,2045,USD millions,GAAP,SEC,FY1999 Q3
+Cisco,gross_margin_pct,1999-05-01,64.98,percent,GAAP GM/Sales,SEC,FY1999 Q3
+Cisco,operating_income_gaap,1999-05-01,875,USD millions,GAAP,SEC,FY1999 Q3; 
+Cisco,operating_revenue,1999-07-31,3558,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY1999 Q4; shovel seller: routing/switching; pro forma OI newsroom
+Cisco,COGS,1999-07-31,1261,USD millions,GAAP,SEC,FY1999 Q4
+Cisco,gross_profit,1999-07-31,2297,USD millions,GAAP,SEC,FY1999 Q4
+Cisco,gross_margin_pct,1999-07-31,64.56,percent,GAAP GM/Sales,SEC,FY1999 Q4
+Cisco,operating_income_gaap,1999-07-31,794,USD millions,GAAP,SEC,FY1999 Q4; pro forma OI newsroom
+Cisco,operating_income_proforma,1999-07-31,969,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY1999 Q4
+Cisco,operating_revenue,1999-10-30,3877,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q1; shovel seller: routing/switching; 
+Cisco,COGS,1999-10-30,1364,USD millions,GAAP,SEC,FY2000 Q1
+Cisco,gross_profit,1999-10-30,2513,USD millions,GAAP,SEC,FY2000 Q1
+Cisco,gross_margin_pct,1999-10-30,64.82,percent,GAAP GM/Sales,SEC,FY2000 Q1
+Cisco,operating_income_gaap,1999-10-30,685,USD millions,GAAP,SEC,FY2000 Q1; 
+Cisco,operating_income_proforma,1999-10-30,1090,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q1
+Cisco,operating_revenue,2000-01-29,4350,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q2; shovel seller: routing/switching; Nasdaq telecom peak Mar 2000 shortly after
+Cisco,COGS,2000-01-29,1536,USD millions,GAAP,SEC,FY2000 Q2
+Cisco,gross_profit,2000-01-29,2814,USD millions,GAAP,SEC,FY2000 Q2
+Cisco,gross_margin_pct,2000-01-29,64.69,percent,GAAP GM/Sales,SEC,FY2000 Q2
+Cisco,operating_income_gaap,2000-01-29,1059,USD millions,GAAP,SEC,FY2000 Q2; Nasdaq telecom peak Mar 2000 shortly after
+Cisco,operating_income_proforma,2000-01-29,1161,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q2
+Cisco,operating_revenue,2000-04-29,4919,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q3; shovel seller: routing/switching; 
+Cisco,COGS,2000-04-29,1748,USD millions,GAAP,SEC,FY2000 Q3
+Cisco,gross_profit,2000-04-29,3171,USD millions,GAAP,SEC,FY2000 Q3
+Cisco,gross_margin_pct,2000-04-29,64.46,percent,GAAP GM/Sales,SEC,FY2000 Q3
+Cisco,operating_income_gaap,2000-04-29,744,USD millions,GAAP,SEC,FY2000 Q3; 
+Cisco,operating_income_proforma,2000-04-29,1308,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q3
+Cisco,operating_revenue,2000-07-29,5720,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2000 Q4; shovel seller: routing/switching; 
+Cisco,COGS,2000-07-29,2058,USD millions,GAAP,SEC,FY2000 Q4
+Cisco,gross_profit,2000-07-29,3662,USD millions,GAAP,SEC,FY2000 Q4
+Cisco,gross_margin_pct,2000-07-29,64.02,percent,GAAP GM/Sales,SEC,FY2000 Q4
+Cisco,operating_income_gaap,2000-07-29,770,USD millions,GAAP,SEC,FY2000 Q4; 
+Cisco,operating_income_proforma,2000-07-29,1515,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2000 Q4
+Cisco,operating_revenue,2000-10-28,6519,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q1; shovel seller: routing/switching; 
+Cisco,COGS,2000-10-28,2378,USD millions,GAAP,SEC,FY2001 Q1
+Cisco,gross_profit,2000-10-28,4141,USD millions,GAAP,SEC,FY2001 Q1
+Cisco,gross_margin_pct,2000-10-28,63.52,percent,GAAP GM/Sales,SEC,FY2001 Q1
+Cisco,operating_income_gaap,2000-10-28,902,USD millions,GAAP,SEC,FY2001 Q1; 
+Cisco,operating_revenue,2001-01-27,6748,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q2; shovel seller: routing/switching; Revenue & GP$ peak
+Cisco,COGS,2001-01-27,2581,USD millions,GAAP,SEC,FY2001 Q2
+Cisco,gross_profit,2001-01-27,4167,USD millions,GAAP,SEC,FY2001 Q2
+Cisco,gross_margin_pct,2001-01-27,61.75,percent,GAAP GM/Sales,SEC,FY2001 Q2
+Cisco,operating_income_gaap,2001-01-27,1032,USD millions,GAAP,SEC,FY2001 Q2; Revenue & GP$ peak
+Cisco,operating_income_proforma,2001-01-27,1573,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2001 Q2
+Cisco,operating_revenue,2001-04-28,4728,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q3; shovel seller: routing/switching; Excess inventory charge 2249 in COGS
+Cisco,COGS,2001-04-28,4400,USD millions,GAAP,SEC,FY2001 Q3
+Cisco,gross_profit,2001-04-28,328,USD millions,GAAP,SEC,FY2001 Q3
+Cisco,gross_margin_pct,2001-04-28,6.94,percent,GAAP GM/Sales,SEC,FY2001 Q3
+Cisco,operating_income_gaap,2001-04-28,-3801,USD millions,GAAP,SEC,FY2001 Q3; Excess inventory charge 2249 in COGS
+Cisco,operating_income_proforma,2001-04-28,83,USD millions,Company pro forma excl IPR&D/acquisition/(inventory),newsroom,FY2001 Q3
+Cisco,gross_profit_ex_inventory_charge,2001-04-28,2577,USD millions,Adjusted,newsroom,excl 2249 inventory charge
+Cisco,operating_revenue,2001-07-28,4298,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2001 Q4; shovel seller: routing/switching; 
+Cisco,COGS,2001-07-28,1862,USD millions,GAAP,SEC,FY2001 Q4
+Cisco,gross_profit,2001-07-28,2436,USD millions,GAAP,SEC,FY2001 Q4
+Cisco,gross_margin_pct,2001-07-28,56.68,percent,GAAP GM/Sales,SEC,FY2001 Q4
+Cisco,operating_income_gaap,2001-07-28,-137,USD millions,GAAP,SEC,FY2001 Q4; 
+Cisco,operating_revenue,2001-10-27,4448,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q1; shovel seller: routing/switching; 
+Cisco,COGS,2001-10-27,1756,USD millions,GAAP,SEC,FY2002 Q1
+Cisco,gross_profit,2001-10-27,2692,USD millions,GAAP,SEC,FY2002 Q1
+Cisco,gross_margin_pct,2001-10-27,60.52,percent,GAAP GM/Sales,SEC,FY2002 Q1
+Cisco,operating_income_gaap,2001-10-27,345,USD millions,GAAP,SEC,FY2002 Q1; 
+Cisco,operating_revenue,2002-01-26,4816,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q2; shovel seller: routing/switching; 
+Cisco,COGS,2002-01-26,1846,USD millions,GAAP,SEC,FY2002 Q2
+Cisco,gross_profit,2002-01-26,2970,USD millions,GAAP,SEC,FY2002 Q2
+Cisco,gross_margin_pct,2002-01-26,61.67,percent,GAAP GM/Sales,SEC,FY2002 Q2
+Cisco,operating_income_gaap,2002-01-26,753,USD millions,GAAP,SEC,FY2002 Q2; 
+Cisco,operating_revenue,2002-04-27,4822,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q3; shovel seller: routing/switching; sales only
+Cisco,operating_revenue,2002-07-27,4829,USD millions,GAAP consolidated,SEC 10-Q/10-K / newsroom,FY2002 Q4; shovel seller: routing/switching; 
+Cisco,COGS,2002-07-27,1546,USD millions,GAAP,SEC,FY2002 Q4
+Cisco,gross_profit,2002-07-27,3283,USD millions,GAAP,SEC,FY2002 Q4
+Cisco,gross_margin_pct,2002-07-27,67.99,percent,GAAP GM/Sales,SEC,FY2002 Q4
+Cisco,operating_income_gaap,2002-07-27,947,USD millions,GAAP,SEC,FY2002 Q4; 
+Corning_Telecom,segment_revenue,1999-03-31,488.5,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,1999-06-30,582.8,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,1999-06-30,66.4,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,1999-09-30,803.4,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,1999-09-30,89.8,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,1999-12-31,1083.5,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2000-03-31,905,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-03-31,112,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2000-06-30,1295,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-06-30,181,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2000-09-30,1422,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-09-30,203,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2000-12-31,1564,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-12-31,212,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2001-03-31,1433,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2001-03-31,177,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2001-06-30,1393,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2001-09-30,1089,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2001-09-30,14,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2001-12-31,543,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2002-03-31,465,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2002-03-31,-138,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2002-06-30,437,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2002-09-30,366,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2002-09-30,-132,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+BellSouth,operating_cash_flow,2000-03-31,2350,USD millions,GAAP cash from ops,SEC 10-Q,Q1 three months; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2000-03-31,1563,USD millions,Capital expenditures line,SEC / earnings,Q1 three months
+BellSouth,free_cash_flow,2000-03-31,787,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q1 three months; src=SEC 10-Q comparative in 2001 Q1 form10-q
+BellSouth,operating_cash_flow,2000-06-30,2448,USD millions,GAAP cash from ops,SEC 10-Q,Q2 = H1-Q1; H1 OCF 4798 capex 3268; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2000-06-30,1705,USD millions,Capital expenditures line,SEC / earnings,Q2 = H1-Q1; H1 OCF 4798 capex 3268
+BellSouth,free_cash_flow,2000-06-30,743,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q2 = H1-Q1; H1 OCF 4798 capex 3268; src=SEC 10-Q / earnings selected data
+BellSouth,operating_cash_flow,2001-03-31,1604,USD millions,GAAP cash from ops,SEC 10-Q,Q1; FCF turns negative; OCF down & capex up; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2001-03-31,1690,USD millions,Capital expenditures line,SEC / earnings,Q1; FCF turns negative; OCF down & capex up
+BellSouth,free_cash_flow,2001-03-31,-86,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q1; FCF turns negative; OCF down & capex up; src=SEC 10-Q 0000732713-01-500006
+BellSouth,operating_cash_flow,2001-06-30,2323,USD millions,GAAP cash from ops,SEC 10-Q,Q2 = H1 3927/3357 minus Q1; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2001-06-30,1667,USD millions,Capital expenditures line,SEC / earnings,Q2 = H1 3927/3357 minus Q1
+BellSouth,free_cash_flow,2001-06-30,656,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q2 = H1 3927/3357 minus Q1; src=SEC H1 cash flow / earnings 2Q01
+BellSouth,operating_cash_flow,2002-03-31,2065,USD millions,GAAP cash from ops,SEC 10-Q,Q1; sharp capex cut; FCF recovers; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2002-03-31,1005,USD millions,Capital expenditures line,SEC / earnings,Q1; sharp capex cut; FCF recovers
+BellSouth,free_cash_flow,2002-03-31,1060,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q1; sharp capex cut; FCF recovers; src=SEC 10-Q q1form10q
+BellSouth,operating_cash_flow,2002-06-30,2128,USD millions,GAAP cash from ops,SEC 10-Q,Q2 = H1 4193/2028 minus Q1; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2002-06-30,1023,USD millions,Capital expenditures line,SEC / earnings,Q2 = H1 4193/2028 minus Q1
+BellSouth,free_cash_flow,2002-06-30,1105,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q2 = H1 4193/2028 minus Q1; src=SEC 10-Q H1 2002
+Verizon,operating_cash_flow,2001-03-31,3102,USD millions,GAAP,SEC,Q1 three months; FCF deeply negative from high capex
+Verizon,cash_capex,2001-03-31,4478,USD millions,Capital expenditures,SEC,Q1 three months; FCF deeply negative from high capex
+Verizon,free_cash_flow,2001-03-31,-1376,USD millions,OCF−capex,computed,Q1 three months; FCF deeply negative from high capex
+Verizon,operating_cash_flow,2001-06-30,4556,USD millions,GAAP,SEC,Q2=H1 7658/9163 − Q1
+Verizon,cash_capex,2001-06-30,4685,USD millions,Capital expenditures,SEC,Q2=H1 7658/9163 − Q1
+Verizon,free_cash_flow,2001-06-30,-129,USD millions,OCF−capex,computed,Q2=H1 7658/9163 − Q1
+Verizon,operating_cash_flow,2001-09-30,5438,USD millions,GAAP,SEC,Q3=9M 13096/12477 − H1
+Verizon,cash_capex,2001-09-30,3314,USD millions,Capital expenditures,SEC,Q3=9M 13096/12477 − H1
+Verizon,free_cash_flow,2001-09-30,2124,USD millions,OCF−capex,computed,Q3=9M 13096/12477 − H1
+Verizon,operating_cash_flow,2002-03-31,4478,USD millions,GAAP,SEC,Q1; capex cut; FCF positive
+Verizon,cash_capex,2002-03-31,2374,USD millions,Capital expenditures,SEC,Q1; capex cut; FCF positive
+Verizon,free_cash_flow,2002-03-31,2104,USD millions,OCF−capex,computed,Q1; capex cut; FCF positive
+Verizon,operating_cash_flow,2002-06-30,5564,USD millions,GAAP,SEC,Q2=H1 10042/5510 − Q1
+Verizon,cash_capex,2002-06-30,3136,USD millions,Capital expenditures,SEC,Q2=H1 10042/5510 − Q1
+Verizon,free_cash_flow,2002-06-30,2428,USD millions,OCF−capex,computed,Q2=H1 10042/5510 − Q1
+Verizon,operating_cash_flow,2002-09-30,6036,USD millions,GAAP,SEC,Q3=9M 16078/8108 − H1
+Verizon,cash_capex,2002-09-30,2598,USD millions,Capital expenditures,SEC,Q3=9M 16078/8108 − H1
+Verizon,free_cash_flow,2002-09-30,3438,USD millions,OCF−capex,computed,Q3=9M 16078/8108 − H1
+US_Telecom_Industry,annual_capex,1998,60852,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention
+US_Telecom_Industry,annual_capex,1999,82337,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention
+US_Telecom_Industry,annual_capex,2000,113115,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention
+US_Telecom_Industry,annual_capex,2001,92583,USD millions,annual aggregate LEC+CLEC+IXC+ISP+Cable,CSFB Parmelee via TIA filing,BACKGROUND annual only — not for quarterly peak invention
+Conch_Cement,operating_revenue,2000-06-30,5.95,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2000H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2000-06-30,2.15,CNY 亿元,IFRS 毛利,askci,2000H1
+Conch_Cement,gross_margin_pct,2000-06-30,36.13,percent,GP/Rev,computed,2000H1
+Conch_Cement,operating_revenue,2000-12-31,7.29,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2000H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2000-12-31,2.69,CNY 亿元,IFRS 毛利,askci,2000H2
+Conch_Cement,gross_margin_pct,2000-12-31,36.9,percent,GP/Rev,computed,2000H2
+Conch_Cement,operating_revenue,2001-06-30,9.0,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2001H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2001-06-30,3.34,CNY 亿元,IFRS 毛利,askci,2001H1
+Conch_Cement,gross_margin_pct,2001-06-30,37.11,percent,GP/Rev,computed,2001H1
+Conch_Cement,operating_revenue,2001-12-31,11.44,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2001H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2001-12-31,4.08,CNY 亿元,IFRS 毛利,askci,2001H2
+Conch_Cement,gross_margin_pct,2001-12-31,35.66,percent,GP/Rev,computed,2001H2
+Conch_Cement,operating_revenue,2002-06-30,12.33,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2002H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2002-06-30,4.28,CNY 亿元,IFRS 毛利,askci,2002H1
+Conch_Cement,gross_margin_pct,2002-06-30,34.71,percent,GP/Rev,computed,2002H1
+Conch_Cement,operating_revenue,2002-12-31,17.47,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2002H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2002-12-31,5.96,CNY 亿元,IFRS 毛利,askci,2002H2
+Conch_Cement,gross_margin_pct,2002-12-31,34.12,percent,GP/Rev,computed,2002H2
+Conch_Cement,operating_revenue,2003-06-30,21.17,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2003H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2003-06-30,7.76,CNY 亿元,IFRS 毛利,askci,2003H1
+Conch_Cement,gross_margin_pct,2003-06-30,36.66,percent,GP/Rev,computed,2003H1
+Conch_Cement,operating_revenue,2003-12-31,35.37,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2003H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2003-12-31,15.78,CNY 亿元,IFRS 毛利,askci,2003H2
+Conch_Cement,gross_margin_pct,2003-12-31,44.61,percent,GP/Rev,computed,2003H2
+Conch_Cement,operating_revenue,2004-06-30,37.89,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2004H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2004-06-30,18.06,CNY 亿元,IFRS 毛利,askci,2004H1
+Conch_Cement,gross_margin_pct,2004-06-30,47.66,percent,GP/Rev,computed,2004H1
+Conch_Cement,operating_revenue,2004-12-31,45.96,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2004H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2004-12-31,9.58,CNY 亿元,IFRS 毛利,askci,2004H2
+Conch_Cement,gross_margin_pct,2004-12-31,20.84,percent,GP/Rev,computed,2004H2
+Conch_Cement,operating_revenue,2005-06-30,45.13,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2005H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2005-06-30,8.66,CNY 亿元,IFRS 毛利,askci,2005H1
+Conch_Cement,gross_margin_pct,2005-06-30,19.19,percent,GP/Rev,computed,2005H1
+Conch_Cement,operating_revenue,2005-12-31,63.13,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2005H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2005-12-31,15.45,CNY 亿元,IFRS 毛利,askci,2005H2
+Conch_Cement,gross_margin_pct,2005-12-31,24.47,percent,GP/Rev,computed,2005H2
+Conch_Cement,operating_revenue,2006-06-30,67.01,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2006H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2006-06-30,18.45,CNY 亿元,IFRS 毛利,askci,2006H1
+Conch_Cement,gross_margin_pct,2006-06-30,27.53,percent,GP/Rev,computed,2006H1
+Conch_Cement,operating_revenue,2006-12-31,93.95,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2006H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2006-12-31,26.41,CNY 亿元,IFRS 毛利,askci,2006H2
+Conch_Cement,gross_margin_pct,2006-12-31,28.11,percent,GP/Rev,computed,2006H2
+Conch_Cement,operating_revenue,2007-06-30,83.55,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2007H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2007-06-30,24.19,CNY 亿元,IFRS 毛利,askci,2007H1
+Conch_Cement,gross_margin_pct,2007-06-30,28.95,percent,GP/Rev,computed,2007H1
+Conch_Cement,operating_revenue,2007-12-31,104.21,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2007H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2007-12-31,33.1,CNY 亿元,IFRS 毛利,askci,2007H2
+Conch_Cement,gross_margin_pct,2007-12-31,31.76,percent,GP/Rev,computed,2007H2
+Conch_Cement,operating_revenue,2008-06-30,101.98,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2008H1; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2008-06-30,28.15,CNY 亿元,IFRS 毛利,askci,2008H1
+Conch_Cement,gross_margin_pct,2008-06-30,27.6,percent,GP/Rev,computed,2008H1
+Conch_Cement,operating_revenue,2008-12-31,140.3,CNY 亿元,IFRS; H1 reported or H2=FY−H1,askci/HKEX cumulative,2008H2; 半年度 — full single-quarter triangle incomplete 2002-06 except where noted
+Conch_Cement,gross_profit,2008-12-31,30.93,CNY 亿元,IFRS 毛利,askci,2008H2
+Conch_Cement,gross_margin_pct,2008-12-31,22.05,percent,GP/Rev,computed,2008H2
+Conch_Cement,operating_revenue,2007-09-30,46.166,CNY 亿元,CAS 单季 7-9月,HKEX/financialfilings 2007 Q3,true single quarter
+Conch_Cement,COGS,2007-09-30,31.928,CNY 亿元,CAS,same,
+Conch_Cement,gross_margin_pct,2007-09-30,30.86,percent,(Rev-COGS)/Rev,computed,
+Conch_Cement,operating_profit_CAS,2007-09-30,7.521,CNY 亿元,CAS 营业利润,same,
+Conch_Cement,operating_revenue,2008-03-31,46.1499,CNY 亿元,CAS 单季,p5w broker from filings,2008Q1; post-window confirm / GFC; Q4 stimulus
+Conch_Cement,gross_margin_pct,2008-03-31,25.31,percent,CAS,same,2008Q1
+Conch_Cement,operating_profit_CAS,2008-03-31,4.3491,CNY 亿元,CAS,same,2008Q1
+Conch_Cement,operating_revenue,2008-06-30,55.826,CNY 亿元,CAS 单季,p5w broker from filings,2008Q2; post-window confirm / GFC; Q4 stimulus
+Conch_Cement,gross_margin_pct,2008-06-30,30.49,percent,CAS,same,2008Q2
+Conch_Cement,operating_profit_CAS,2008-06-30,9.8084,CNY 亿元,CAS,same,2008Q2
+Conch_Cement,operating_revenue,2008-09-30,64.7778,CNY 亿元,CAS 单季,p5w broker from filings,2008Q3; post-window confirm / GFC; Q4 stimulus
+Conch_Cement,gross_margin_pct,2008-09-30,24.46,percent,CAS,same,2008Q3
+Conch_Cement,operating_profit_CAS,2008-09-30,8.1953,CNY 亿元,CAS,same,2008Q3
+Conch_Cement,operating_revenue,2008-12-31,75.529,CNY 亿元,CAS 单季,p5w broker from filings,2008Q4; post-window confirm / GFC; Q4 stimulus
+Conch_Cement,gross_margin_pct,2008-12-31,20.94,percent,CAS,same,2008Q4
+Conch_Cement,operating_profit_CAS,2008-12-31,7.5187,CNY 亿元,CAS,same,2008Q4
+China_Housing_Starts,annual_yoy,2000,31.02,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2001,26.41,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2002,14.46,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2003,27.82,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2004,10.43,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2005,12.66,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2006,16.44,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2007,20.38,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2008,7.5,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Commodity_Housing_Sales_Area,annual_yoy,2000,28.03,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2001,20.25,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2002,19.62,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2003,25.77,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2004,13.39,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2005,45.13,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2006,11.48,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2007,25.05,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Commodity_Housing_Sales_Area,annual_yoy,2008,-14.72,percent YoY,全年累计同比,gotohui/NBS,销售/回款代理；2005口径含期房
+China_Infrastructure_Investment,annual_yoy,2001,15.7,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2002,18.9,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2003,45.8,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2004,20.4,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2005,19.6,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2006,27.0,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2007,24.2,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2008,34.3,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Property_Development_Investment,annual_level,2001,6344.1,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Development_Investment,annual_level,2002,7790.9,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Development_Investment,annual_level,2003,10153.8,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Development_Investment,annual_level,2004,13158.3,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Development_Investment,annual_level,2005,15909.2,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Development_Investment,annual_level,2006,19422.9,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Development_Investment,annual_level,2007,25288.8,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Development_Investment,annual_level,2008,31203.2,CNY 亿元,房地产开发投资完成额,NBS yearbook tables,买方开支代理（开发商）
+China_Property_Funding,annual_level,2001,7696.4,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Property_Funding,annual_level,2002,9750.0,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Property_Funding,annual_level,2003,13196.9,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Property_Funding,annual_level,2004,17168.8,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Property_Funding,annual_level,2005,21397.8,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Property_Funding,annual_level,2006,27135.6,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Property_Funding,annual_level,2007,37478.0,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Property_Funding,annual_level,2008,39619.4,CNY 亿元,房地产开发资金来源小计,NBS,销售回款+贷款等融资；非企业FCF但可看资金到位
+China_Steel_Rebar,simulated_ton_profit_series,2002-2008,,CNY/ton,formula only,public industry formula,缺口：无连续同口径现货序列故不编造峰；公式=螺纹−1.6×铁矿−0.5×焦炭−加工成本

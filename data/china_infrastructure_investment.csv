@@ -1,0 +1,9 @@
+sample,metric,period,value,unit,basis,source_url,notes
+China_Infrastructure_Investment,annual_yoy,2001,15.7,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2002,18.9,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2003,45.8,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2004,20.4,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2005,19.6,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2006,27.0,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2007,24.2,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行
+China_Infrastructure_Investment,annual_yoy,2008,34.3,percent YoY,全年 FAI 基建口径,chinadata.live citing NBS,道路/基建需求；与地产开工并行

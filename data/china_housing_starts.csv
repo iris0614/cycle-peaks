@@ -1,0 +1,10 @@
+sample,metric,period,value,unit,basis,source_url,notes
+China_Housing_Starts,annual_yoy,2000,31.02,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2001,26.41,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2002,14.46,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2003,27.82,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2004,10.43,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2005,12.66,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2006,16.44,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2007,20.38,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平
+China_Housing_Starts,annual_yoy,2008,7.5,percent YoY,全年累计同比,gotohui/NBS-compatible,下游新建；非单季水平

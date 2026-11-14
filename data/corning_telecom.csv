@@ -1,0 +1,26 @@
+sample,metric,period,value,unit,basis,source_url,notes
+Corning_Telecom,segment_revenue,1999-03-31,488.5,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,1999-06-30,582.8,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,1999-06-30,66.4,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,1999-09-30,803.4,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,1999-09-30,89.8,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,1999-12-31,1083.5,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2000-03-31,905,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-03-31,112,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2000-06-30,1295,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-06-30,181,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2000-09-30,1422,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-09-30,203,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2000-12-31,1564,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2000-12-31,212,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2001-03-31,1433,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2001-03-31,177,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2001-06-30,1393,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2001-09-30,1089,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2001-09-30,14,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2001-12-31,543,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2002-03-31,465,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2002-03-31,-138,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed
+Corning_Telecom,segment_revenue,2002-06-30,437,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_revenue,2002-09-30,366,USD millions,Telecom segment,SEC,fiber/cable & photonics — sells to carriers/OEMs; vertical integration in fiber
+Corning_Telecom,segment_earnings,2002-09-30,-132,USD millions,before MI/equity/restructuring as disclosed,SEC,segment GM% not disclosed

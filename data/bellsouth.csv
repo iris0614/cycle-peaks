@@ -1,0 +1,19 @@
+sample,metric,period,value,unit,basis,source_url,notes
+BellSouth,operating_cash_flow,2000-03-31,2350,USD millions,GAAP cash from ops,SEC 10-Q,Q1 three months; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2000-03-31,1563,USD millions,Capital expenditures line,SEC / earnings,Q1 three months
+BellSouth,free_cash_flow,2000-03-31,787,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q1 three months; src=SEC 10-Q comparative in 2001 Q1 form10-q
+BellSouth,operating_cash_flow,2000-06-30,2448,USD millions,GAAP cash from ops,SEC 10-Q,Q2 = H1-Q1; H1 OCF 4798 capex 3268; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2000-06-30,1705,USD millions,Capital expenditures line,SEC / earnings,Q2 = H1-Q1; H1 OCF 4798 capex 3268
+BellSouth,free_cash_flow,2000-06-30,743,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q2 = H1-Q1; H1 OCF 4798 capex 3268; src=SEC 10-Q / earnings selected data
+BellSouth,operating_cash_flow,2001-03-31,1604,USD millions,GAAP cash from ops,SEC 10-Q,Q1; FCF turns negative; OCF down & capex up; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2001-03-31,1690,USD millions,Capital expenditures line,SEC / earnings,Q1; FCF turns negative; OCF down & capex up
+BellSouth,free_cash_flow,2001-03-31,-86,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q1; FCF turns negative; OCF down & capex up; src=SEC 10-Q 0000732713-01-500006
+BellSouth,operating_cash_flow,2001-06-30,2323,USD millions,GAAP cash from ops,SEC 10-Q,Q2 = H1 3927/3357 minus Q1; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2001-06-30,1667,USD millions,Capital expenditures line,SEC / earnings,Q2 = H1 3927/3357 minus Q1
+BellSouth,free_cash_flow,2001-06-30,656,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q2 = H1 3927/3357 minus Q1; src=SEC H1 cash flow / earnings 2Q01
+BellSouth,operating_cash_flow,2002-03-31,2065,USD millions,GAAP cash from ops,SEC 10-Q,Q1; sharp capex cut; FCF recovers; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2002-03-31,1005,USD millions,Capital expenditures line,SEC / earnings,Q1; sharp capex cut; FCF recovers
+BellSouth,free_cash_flow,2002-03-31,1060,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q1; sharp capex cut; FCF recovers; src=SEC 10-Q q1form10q
+BellSouth,operating_cash_flow,2002-06-30,2128,USD millions,GAAP cash from ops,SEC 10-Q,Q2 = H1 4193/2028 minus Q1; shovel buyer (RBOC network build)
+BellSouth,cash_capex,2002-06-30,1023,USD millions,Capital expenditures line,SEC / earnings,Q2 = H1 4193/2028 minus Q1
+BellSouth,free_cash_flow,2002-06-30,1105,USD millions,FCF=OCF−cash capex (ex-dividends),computed,Q2 = H1 4193/2028 minus Q1; src=SEC 10-Q H1 2002
