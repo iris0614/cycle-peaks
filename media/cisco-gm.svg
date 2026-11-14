@@ -1,30 +1,31 @@
-<svg viewBox="0 0 860 270" role="img" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 860 270" role="img" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
 <text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">Cisco 毛利率 %（GAAP；01Q3adj=剔存货）</text>
-<line x1="48" y1="36.0" x2="840" y2="36.0" stroke="#e8e4da" stroke-width="1"/>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da" stroke-width="1"/>
 <text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">67</text>
-<line x1="48" y1="82.5" x2="840" y2="82.5" stroke="#e8e4da" stroke-width="1"/>
-<text x="42" y="86.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">63</text>
-<line x1="48" y1="129.0" x2="840" y2="129.0" stroke="#e8e4da" stroke-width="1"/>
+<line x1="48" y1="82.5" x2="836" y2="82.5" stroke="#e8e4da" stroke-width="1"/>
+<text x="42" y="86.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">64</text>
+<line x1="48" y1="129.0" x2="836" y2="129.0" stroke="#e8e4da" stroke-width="1"/>
 <text x="42" y="133.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">60</text>
-<line x1="48" y1="175.5" x2="840" y2="175.5" stroke="#e8e4da" stroke-width="1"/>
+<line x1="48" y1="175.5" x2="836" y2="175.5" stroke="#e8e4da" stroke-width="1"/>
 <text x="42" y="179.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">57</text>
-<line x1="48" y1="222.0" x2="840" y2="222.0" stroke="#e8e4da" stroke-width="1"/>
+<line x1="48" y1="222.0" x2="836" y2="222.0" stroke="#e8e4da" stroke-width="1"/>
 <text x="42" y="226.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">54</text>
-<polyline fill="none" stroke="#166534" stroke-width="2.4" points="48.0,48.8 180.0,57.0 312.0,63.7 444.0,73.2 576.0,105.7 708.0,209.2 840.0,106.8"/>
-<circle cx="48.0" cy="48.8" r="3.2" fill="#166534"/>
-<circle cx="180.0" cy="57.0" r="3.2" fill="#166534"/>
-<circle cx="312.0" cy="63.7" r="3.2" fill="#166534"/>
-<circle cx="444.0" cy="73.2" r="3.2" fill="#166534"/>
-<circle cx="576.0" cy="105.7" r="3.2" fill="#166534"/>
-<circle cx="708.0" cy="209.2" r="3.2" fill="#166534"/>
-<circle cx="840.0" cy="106.8" r="3.2" fill="#166534"/>
-<text x="48.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">98Q4</text>
-<text x="180.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">99Q2</text>
-<text x="312.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">00Q2</text>
-<text x="444.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">00Q4</text>
-<text x="576.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">01Q2</text>
-<text x="708.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">01Q3adj</text>
-<text x="840.0" y="260" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">02Q2</text>
-<rect x="48" y="234" width="10" height="10" fill="#166534"/>
-<text x="62" y="243" fill="#333" font-size="11" font-family="sans-serif">毛利率%</text>
-<text x="54" y="52" fill="#166534" font-size="11" font-family="sans-serif">▲ 峰 FY1998 Q4</text></svg>
+<polyline fill="none" stroke="#166534" stroke-width="2.4" points="48.0,54.6 179.3,62.5 310.7,69.0 442.0,78.2 573.3,109.5 704.7,209.6 836.0,110.6"/>
+<circle cx="48.0" cy="54.6" r="3.2" fill="#166534"/>
+<circle cx="179.3" cy="62.5" r="3.2" fill="#166534"/>
+<circle cx="310.7" cy="69.0" r="3.2" fill="#166534"/>
+<circle cx="442.0" cy="78.2" r="3.2" fill="#166534"/>
+<circle cx="573.3" cy="109.5" r="3.2" fill="#166534"/>
+<circle cx="704.7" cy="209.6" r="3.2" fill="#166534"/>
+<circle cx="836.0" cy="110.6" r="3.2" fill="#166534"/>
+<text x="48.0" y="262" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">98Q4</text>
+<text x="179.3" y="262" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">99Q2</text>
+<text x="310.7" y="262" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">00Q2</text>
+<text x="442.0" y="262" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">00Q4</text>
+<text x="573.3" y="262" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">01Q2</text>
+<text x="704.7" y="262" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">01Q3adj</text>
+<text x="836.0" y="262" text-anchor="middle" fill="#5c5a55" font-size="11" font-family="sans-serif">02Q2</text>
+<rect x="48" y="227" width="10" height="10" fill="#166534"/>
+<text x="62" y="236" fill="#333" font-size="11" font-family="sans-serif">毛利率%</text>
+<text x="54" y="52" fill="#166534" font-size="11" font-family="sans-serif">▲ 峰 FY1998 Q4</text>
+</svg>
