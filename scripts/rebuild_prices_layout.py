@@ -130,17 +130,26 @@ def svg_series_chart(
                 continue
             parts.append(f'<circle cx="{x(i):.1f}" cy="{y(v):.1f}" r="3" fill="{color}"/>')
 
-    # annotations on FCF points etc.
+    # annotations on FCF points etc. — label above/below, never flush right (clips)
     for ann in annotations:
         i = ann["i"]
         v = ann["v"]
         color = ann.get("color", "#9f1239")
         tip = H.escape(json.dumps(ann.get("tip", {}), ensure_ascii=False), quote=True)
+        lab = ann["label"]
+        lab_w = sum((11 if ord(c) > 0x2E80 else 6.5) for c in lab)
+        px, py = x(i), y(v)
+        # prefer above; if too close to top, place below
+        tx = px - lab_w / 2
+        tx = max(pl + 2, min(tx, w - pr - lab_w - 4))
+        ty = py - 14
+        if ty < pt + 12:
+            ty = py + 18
         parts.append(
             f'<g class="fcf-ann" data-tipjson="{tip}" style="cursor:pointer">'
-            f'<line x1="{x(i):.1f}" y1="{pt}" x2="{x(i):.1f}" y2="{h-pb}" stroke="{color}" stroke-dasharray="4 3" opacity="0.65"/>'
-            f'<circle cx="{x(i):.1f}" cy="{y(v):.1f}" r="6" fill="{color}" stroke="#fff" stroke-width="1.8"/>'
-            f'<text x="{x(i)+8:.1f}" y="{y(v)-10:.1f}" fill="{color}" font-size="11">{H.escape(ann["label"])}</text>'
+            f'<line x1="{px:.1f}" y1="{pt}" x2="{px:.1f}" y2="{h-pb}" stroke="{color}" stroke-dasharray="4 3" opacity="0.65"/>'
+            f'<circle cx="{px:.1f}" cy="{py:.1f}" r="6" fill="{color}" stroke="#fff" stroke-width="1.8"/>'
+            f'<text x="{tx:.1f}" y="{ty:.1f}" fill="{color}" font-size="11" font-family="sans-serif">{H.escape(lab)}</text>'
             f"</g>"
         )
 

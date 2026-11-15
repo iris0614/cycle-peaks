@@ -207,52 +207,45 @@ def build_chart(
     for p in labeled:
         lines = p["lines"]
         lw, lh = est_label_size(lines)
-        # candidate offsets: (dx_center, dy_top) relative to point — prefer above then below
+        # Prefer above/below the point (centered). Avoid right-side placement that clips.
         cands = []
-        for dx, dy in [
-            (0, -lh - 28),
-            (0, 22),
-            (-lw * 0.35, -lh - 36),
-            (lw * 0.1, -lh - 40),
-            (-lw * 0.5, 26),
-            (20, -lh - 20),
-            (-lw - 20, -lh - 20),
-            (24, 18),
-            (-lw - 24, 18),
-            (0, -lh - 56),
-            (0, 40),
-            (-lw * 0.2, -lh - 72),
-        ]:
-            lx0 = p["xx"] + dx
-            ly0 = p["yy"] + dy
-            lx1, ly1 = lx0 + lw, ly0 + lh
-            if ly0 < pt + 2 or ly1 > h - pb - 4 or lx0 < pl + 2 or lx1 > w - 6:
-                continue
-            cands.append((lx0, ly0, lx1, ly1))
+        dy_opts = [-lh - 26, 20, -lh - 42, 34, -lh - 58, 48, -lh - 74, 62]
+        # horizontal: center first, then slight left/right nudges (still clamped inside)
+        dx_fracs = [0.0, -0.22, 0.18, -0.38, 0.3]
+        for dy in dy_opts:
+            for frac in dx_fracs:
+                lx0 = p["xx"] - lw / 2 + frac * lw
+                lx0 = max(pl + 4, min(lx0, w - pr - lw - 8))
+                ly0 = p["yy"] + dy
+                lx1, ly1 = lx0 + lw, ly0 + lh
+                if ly0 < pt + 2 or ly1 > h - pb - 4:
+                    continue
+                # reject boxes that sit mostly to the right of the point near the chart edge
+                if lx0 > p["xx"] + 8 and p["xx"] > w - pr - 120:
+                    continue
+                cands.append((lx0, ly0, lx1, ly1, abs(dy), abs(frac)))
 
+        # Prefer smaller vertical gap, then more centered
+        cands.sort(key=lambda b: (b[4], b[5]))
         chosen = None
         for b in cands:
-            if not overlaps(b):
-                chosen = b
+            box = b[:4]
+            if not overlaps(box):
+                chosen = box
                 break
         if not chosen and cands:
-            chosen = cands[0]
+            chosen = cands[0][:4]
         if not chosen:
-            chosen = (p["xx"] + 12, max(pt + 2, p["yy"] - lh - 20), p["xx"] + 12 + lw, max(pt + 2, p["yy"] - lh - 20) + lh)
+            lx0 = max(pl + 4, min(p["xx"] - lw / 2, w - pr - lw - 8))
+            ly0 = max(pt + 2, p["yy"] - lh - 26)
+            chosen = (lx0, ly0, lx0 + lw, ly0 + lh)
         boxes.append(chosen)
         p["box"] = chosen
-        # arrow attaches to nearest box edge toward the point
+        # Arrow from bottom/top center of label box toward the point (vertical-first)
         bx0, by0, bx1, by1 = chosen
         cx = (bx0 + bx1) / 2
-        cy = (by0 + by1) / 2
-        # pick attachment on box boundary
-        if abs(p["yy"] - cy) >= abs(p["xx"] - cx):
-            ax = min(max(p["xx"], bx0), bx1)
-            ay = by1 if p["yy"] > cy else by0
-        else:
-            ay = min(max(p["yy"], by0), by1)
-            ax = bx1 if p["xx"] > cx else bx0
-        # stop arrow slightly short of the dot
+        above = by1 <= p["yy"]
+        ax, ay = cx, (by1 if above else by0)
         vx, vy = p["xx"] - ax, p["yy"] - ay
         dist = math.hypot(vx, vy) or 1
         end_x = p["xx"] - vx / dist * 7
