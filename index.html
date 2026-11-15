@@ -53,7 +53,8 @@ tr.open td{background:#f8fafc}
 .chart svg{display:block;width:100%;max-width:100%;height:auto;min-width:0}
 .caption{font-size:12.5px;color:var(--muted);margin:0 0 12px;line-height:1.45;overflow-wrap:anywhere}
 .note{border-left:3px solid var(--accent2);background:#fffbeb;padding:10px 12px;margin:12px 0;font-size:14px}
-.gap{border-left:3px solid var(--danger);background:#fff1f2;padding:10px 12px;margin:12px 0;font-size:14px}
+.gap{display:none} /* replaced by .footnote */
+.footnote strong{color:#4b5563;font-weight:600}
 .answer{border:1px solid #9ec5c9;background:#f0faf9;border-radius:12px;padding:16px 18px;margin:12px 0}
 .dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .dl a{display:inline-block;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--accent);text-decoration:none;font-size:13px}
@@ -71,8 +72,25 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 
   #ev-tooltip{display:none;position:fixed;z-index:40;max-width:340px;background:#111827;color:#f9fafb;padding:12px 14px;border-radius:10px;font-size:12.5px;line-height:1.45;box-shadow:0 10px 30px rgba(0,0,0,.25);pointer-events:none}
   #ev-tooltip strong{color:#fff}
-  #ev-tooltip .k{color:#9ca3af}
+  #ev-tooltip .k{color:#9ca3af;margin-top:6px}
   #ev-tooltip.show{display:block}
+  #ev-tooltip a{pointer-events:auto}
+
+
+.case-panel{margin:22px 0 28px;padding-top:4px}
+.timeline{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px;align-items:center}
+.timeline .tl-label{font-size:12px;color:var(--muted);margin-right:4px}
+.timeline a.tl{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--accent);text-decoration:none;font-size:12.5px;line-height:1.3}
+.timeline a.tl:hover,.timeline a.tl:focus{background:#eef6f6;border-color:#9ec5c9}
+.timeline a.tl .t{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.layer-block{margin:14px 0;padding:12px 14px;border:1px dashed var(--line);border-radius:12px;background:#fffcf7}
+.layer-block h4{margin:0 0 8px;font-size:0.98rem;color:#243}
+details.more{margin:8px 0 0;font-size:13.5px;color:var(--muted)}
+details.more summary{cursor:pointer;color:var(--accent)}
+.footnote{font-size:11.5px;color:#6b7280;line-height:1.45;margin:6px 0 10px;overflow-wrap:anywhere}
+.footnote + .footnote{margin-top:2px}
+.sync-line{stroke:#111827;stroke-width:1;stroke-dasharray:3 2;opacity:0.45;pointer-events:none}
+.fcf-tabs{margin-bottom:6px}
 
 </style>
 </head>
@@ -98,7 +116,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
     <li><a href="#rules">拐点确认规则与 T0</a></li>
     <li><a href="#ai">AI 面板：NVIDIA × Alphabet（+MSFT 交叉）</a></li>
     <li><a href="#hist">历史对照：美国 / 中国（摘要）</a></li>
-    <li><a href="#prices">多年股价与事件标注</a></li>
+    <li><a href="#prices">股价与事件：产业链拐点</a></li>
     <li><a href="#answers">逐案四个问题</a></li>
     <li><a href="#data">数据下载</a></li>
   </ol>
@@ -111,7 +129,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
     <thead><tr><th>已观察到的现象</th><th>证据状态</th><th>下一项优先验证</th><th>美国历史间隔 / 股价</th><th>中国历史间隔 / 股价</th></tr></thead>
     <tbody>
       <tr class="peak"><td>英伟达 GAAP 毛利率自阶段高点回落（FY25Q1 <strong>78.4%</strong> → 后续低于该点；FY26Q1 曾至 60.5% 后部分修复）</td><td><span class="pill warn">阶段高点</span> 窗口未结束；收入与数据中心收入<strong>仍创新高</strong></td><td>看毛利额、数据中心收入及指引是否同步转弱；拆产品切换 / 结构 / 存货</td><td>Cisco：GM峰→收入峰约 <strong>+10 季</strong>；GM披露后 60 日约 <strong>−0.9%</strong>（相对基准见事件表）</td><td>海螺：GM峰后收入仍升数年；中报代理日后 60 日约 <strong>−10.4%</strong></td></tr>
-      <tr class="neg"><td>Alphabet 集团 FCF 承压：<strong>2026Q2 首度转负</strong>（−$5.9B），2026Q3 再负（−$9.1B）；现金 CapEx 续升</td><td><span class="pill danger">单季已确认</span>；滚动四季 FCF 仍待表内核算标注</td><td>拆 OCF vs CapEx；对比 MSFT 现金 CapEx/FCF 是否同步；将「采购/CapEx 指引下调」单列跟踪</td><td>BellSouth/VZ：FCF转负→砍CapEx约 <strong>+4 季</strong>；FCF压力披露窗内运营商股价未必立即崩</td><td>2002–07 宏观开发资金<strong>未见</strong>美式季度 FCF 转负；压力在材料 GM</td></tr>
+      <tr class="neg"><td>Alphabet 集团 FCF 承压：<strong>2026Q2 首度转负</strong>（−$5.9B），2026Q3 再负（−$9.1B）；现金 CapEx 续升</td><td><span class="pill danger">单季已确认</span>；滚动四季至 2026Q3 <strong>仍为正</strong>（约 $19.7B，已下降）</td><td>拆 OCF vs CapEx；对比 MSFT 现金 CapEx/FCF 是否同步；将「采购/CapEx 指引下调」单列跟踪</td><td>BellSouth/VZ：FCF转负→砍CapEx约 <strong>+4 季</strong>；FCF压力披露窗内运营商股价未必立即崩</td><td>2002–07 宏观开发资金<strong>未见</strong>美式季度 FCF 转负；压力在材料 GM</td></tr>
       <tr class="open"><td>买方下修 CapEx 或推迟项目</td><td><span class="pill">尚未确认</span>（Alphabet CapEx 仍升；MSFT 总 CapEx 高位但指引有节奏变化）</td><td>订单/交付/收入指引 → HBM/先进封装扩产计划</td><td>运营商实质砍 CapEx 约在 2002Q1，滞后 FCF 压力</td><td>未确认统一「采购预算下调」季频序列</td></tr>
       <tr class="open"><td>基础设施投资放缓，应用数据仍改善</td><td><span class="pill">待验证</span></td><td>自动驾驶付费单量、机器人付费部署、AI 软件续费及扣推理成本后毛利；应用股 vs 设备股相对表现</td><td>建网退潮后应用层（如亚马逊）可继续改善 — 本站应用面板待补齐</td><td>2005 销售同比远强于开工；水泥 GM 仍差</td></tr>
     </tbody>
@@ -135,7 +153,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
       <tr><td><strong>最终需求与回报</strong></td><td>带宽使用；亚马逊等应用收入/现金流（面板<strong>延长观察，待补</strong>）</td><td>商品房销售、回款；道路实物量对照沥青（沥青关联<strong>待核实</strong>）</td><td>自动驾驶/机器人/AI 软件付费与单位经济性（<strong>待补可验证序列</strong>）</td></tr>
     </tbody>
   </table></div>
-  <div class="gap"><strong>缺数清单：</strong>预制棒/光模块外售连续季；中国螺纹与沥青可核对季/月序列；上市开发商统一 FCF；HBM/CoWoS 出货与利用率；AI 应用付费单量与扣推理成本毛利；亚马逊 1998–2004 应用层季报对齐。</div>
+  <p class="footnote"><strong>缺数（不影响主文已列结论）：</strong>预制棒/光模块外售连续季；中国螺纹与沥青可核对季/月序列；上市开发商统一 FCF；HBM/CoWoS 出货与利用率；AI 应用付费单量与扣推理成本毛利。亚马逊 1998–2004 应用层季报仅部分对齐，FCF 标为持续为负样本。</p>
 </section>
 
 <section class="block" id="rules">
@@ -248,9 +266,15 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
   </div>
   <div class="note">GM→利润额→收入：目前稳健支持「毛利率阶段高点已现」；毛利额/营业利润与收入<strong>尚未同季见顶</strong>（多项仍升）。逆序与同季见顶情况将在收入转弱后回填。</div>
 
-  <h3>4.2 买方 — Alphabet 集团（OCF / CapEx / FCF）</h3>
-  <div class="chart"><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">Alphabet：OCF / 现金 CapEx / FCF（十亿美元，集团口径）</text>
+  <h3 id="ai-buyer-alphabet">4.2 买方 — Alphabet 集团（OCF / CapEx / FCF）</h3>
+
+<div class="fcf-panel" id="alphabet-fcf-panel">
+  <div class="tabs fcf-tabs" role="tablist">
+    <a href="#alphabet-fcf-panel" class="on" data-fcf-mode="q">单季度</a>
+    <a href="#alphabet-fcf-panel" data-fcf-mode="ttm">滚动四季度</a>
+  </div>
+  <div class="chart fcf-chart" data-fcf-view="q"><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="alphabet-fcf-q" data-mode="q" overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">Alphabet：单季度 OCF / 现金 CapEx / FCF（十亿美元）</text>
 <line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
 <text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">60</text>
 <line x1="48" y1="84.5" x2="836" y2="84.5" stroke="#e8e4da"/>
@@ -261,9 +285,9 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 <text x="42" y="185.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">4</text>
 <line x1="48" y1="230.0" x2="836" y2="230.0" stroke="#e8e4da"/>
 <text x="42" y="234.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">-14</text>
-<line x1="48" y1="193.2" x2="836" y2="193.2" stroke="#9f1239" stroke-dasharray="4 3" opacity=".55"/>
-<text x="836" y="189.2" text-anchor="end" fill="#9f1239" font-size="10">FCF=0</text>
-<polyline fill="none" stroke="#0b5f6b" stroke-width="2.4" points="48.0,143.5 119.6,117.4 191.3,123.2 262.9,112.5 334.5,90.4 406.2,98.1 477.8,120.2 549.5,65.9 621.1,55.4 692.7,72.8 764.4,90.5 836.0,82.0"/>
+<line x1="48" y1="193.2" x2="836" y2="193.2" stroke="#9f1239" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="836" y="188.2" text-anchor="end" fill="#9f1239" font-size="11" font-weight="700">FCF 零线</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.3" points="48.0,143.5 119.6,117.4 191.3,123.2 262.9,112.5 334.5,90.4 406.2,98.1 477.8,120.2 549.5,65.9 621.1,55.4 692.7,72.8 764.4,90.5 836.0,82.0"/>
 <circle cx="48.0" cy="143.5" r="3" fill="#0b5f6b"/>
 <circle cx="119.6" cy="117.4" r="3" fill="#0b5f6b"/>
 <circle cx="191.3" cy="123.2" r="3" fill="#0b5f6b"/>
@@ -276,7 +300,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 <circle cx="692.7" cy="72.8" r="3" fill="#0b5f6b"/>
 <circle cx="764.4" cy="90.5" r="3" fill="#0b5f6b"/>
 <circle cx="836.0" cy="82.0" r="3" fill="#0b5f6b"/>
-<polyline fill="none" stroke="#6b7280" stroke-width="2.4" points="48.0,164.2 119.6,161.6 191.3,158.5 262.9,158.9 334.5,155.7 406.2,148.0 477.8,134.2 549.5,130.2 621.1,120.0 692.7,99.4 764.4,75.1 836.0,58.2"/>
+<polyline fill="none" stroke="#6b7280" stroke-width="2.3" points="48.0,164.2 119.6,161.6 191.3,158.5 262.9,158.9 334.5,155.7 406.2,148.0 477.8,134.2 549.5,130.2 621.1,120.0 692.7,99.4 764.4,75.1 836.0,58.2"/>
 <circle cx="48.0" cy="164.2" r="3" fill="#6b7280"/>
 <circle cx="119.6" cy="161.6" r="3" fill="#6b7280"/>
 <circle cx="191.3" cy="158.5" r="3" fill="#6b7280"/>
@@ -289,7 +313,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 <circle cx="692.7" cy="99.4" r="3" fill="#6b7280"/>
 <circle cx="764.4" cy="75.1" r="3" fill="#6b7280"/>
 <circle cx="836.0" cy="58.2" r="3" fill="#6b7280"/>
-<polyline fill="none" stroke="#9f1239" stroke-width="2.4" points="48.0,172.5 119.6,148.9 191.3,157.8 262.9,146.8 334.5,127.9 406.2,143.4 477.8,179.3 549.5,128.9 621.1,128.7 692.7,166.6 764.4,208.6 836.0,217.1"/>
+<polyline fill="none" stroke="#9f1239" stroke-width="2.3" points="48.0,172.5 119.6,148.9 191.3,157.8 262.9,146.8 334.5,127.9 406.2,143.4 477.8,179.3 549.5,128.9 621.1,128.7 692.7,166.6 764.4,208.6 836.0,217.1"/>
 <circle cx="48.0" cy="172.5" r="3" fill="#9f1239"/>
 <circle cx="119.6" cy="148.9" r="3" fill="#9f1239"/>
 <circle cx="191.3" cy="157.8" r="3" fill="#9f1239"/>
@@ -302,37 +326,107 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 <circle cx="692.7" cy="166.6" r="3" fill="#9f1239"/>
 <circle cx="764.4" cy="208.6" r="3" fill="#9f1239"/>
 <circle cx="836.0" cy="217.1" r="3" fill="#9f1239"/>
-<text x="48.0" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">23Q4</text>
-<text x="119.6" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">24Q1</text>
-<text x="191.3" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">24Q2</text>
-<text x="262.9" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">24Q3</text>
-<text x="334.5" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">24Q4</text>
-<text x="406.2" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">25Q1</text>
-<text x="477.8" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">25Q2</text>
-<text x="549.5" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">25Q3</text>
-<text x="621.1" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">25Q4</text>
-<text x="692.7" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">26Q1</text>
-<text x="764.4" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">26Q2</text>
-<text x="836.0" y="292" text-anchor="middle" fill="#5c5a55" font-size="10" font-family="sans-serif">26Q3</text>
-<rect x="48" y="235" width="10" height="10" fill="#0b5f6b"/>
-<text x="62" y="244" fill="#333" font-size="11" font-family="sans-serif">OCF ($B)</text>
-<rect x="134.56" y="235" width="10" height="10" fill="#6b7280"/>
-<text x="148.56" y="244" fill="#333" font-size="11" font-family="sans-serif">现金CapEx ($B)</text>
-<rect x="256.76" y="235" width="10" height="10" fill="#9f1239"/>
-<text x="270.76" y="244" fill="#333" font-size="11" font-family="sans-serif">FCF ($B)</text>
-<line x1="764.4" y1="36" x2="764.4" y2="230" stroke="#9f1239" stroke-dasharray="5 4"/><text x="694.4" y="50" fill="#9f1239" font-size="11">FCF首度转负</text>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;单季 FCF 转负&quot;, &quot;fiscal&quot;: &quot;26Q2&quot;, &quot;period_end&quot;: &quot;2026-06-30&quot;, &quot;disclose&quot;: &quot;2026-07-23&quot;, &quot;mark_date&quot;: &quot;2026-07-23&quot;, &quot;price&quot;: 317.49, &quot;prev_fcf&quot;: 10.12, &quot;curr_fcf&quot;: -5.86, &quot;ocf&quot;: 39.07, &quot;capex&quot;: 44.92, &quot;formula&quot;: &quot;FCF = OCF − 现金 CapEx（正值=支出）&quot;, &quot;driver&quot;: &quot;CapEx 上升主导（OCF 仍强）&quot;, &quot;source&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;, &quot;filing&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;}" style="cursor:pointer"><line x1="764.4" y1="36" x2="764.4" y2="230" stroke="#9f1239" stroke-dasharray="4 3" opacity="0.65"/><circle cx="764.4" cy="208.6" r="6" fill="#9f1239" stroke="#fff" stroke-width="1.8"/><text x="772.4" y="198.6" fill="#9f1239" font-size="11">单季 FCF 转负</text></g>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;单季 FCF 连续转负&quot;, &quot;fiscal&quot;: &quot;26Q3&quot;, &quot;period_end&quot;: &quot;2026-09-30&quot;, &quot;disclose&quot;: &quot;2026-10-29&quot;, &quot;mark_date&quot;: &quot;2026-10-29&quot;, &quot;price&quot;: 283.82, &quot;prev_fcf&quot;: -5.86, &quot;curr_fcf&quot;: -9.06, &quot;ocf&quot;: 42.29, &quot;capex&quot;: 51.35, &quot;formula&quot;: &quot;FCF = OCF − 现金 CapEx（正值=支出）&quot;, &quot;driver&quot;: &quot;CapEx 上升主导（OCF 仍强）&quot;, &quot;source&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;, &quot;filing&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;}" style="cursor:pointer"><line x1="836.0" y1="36" x2="836.0" y2="230" stroke="#9f1239" stroke-dasharray="4 3" opacity="0.65"/><circle cx="836.0" cy="217.1" r="6" fill="#9f1239" stroke="#fff" stroke-width="1.8"/><text x="844.0" y="207.1" fill="#9f1239" font-size="11">连续转负</text></g>
+<text x="48.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">23Q4</text>
+<text x="119.6" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q1</text>
+<text x="191.3" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q2</text>
+<text x="262.9" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q3</text>
+<text x="334.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q4</text>
+<text x="406.2" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q1</text>
+<text x="477.8" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q2</text>
+<text x="549.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q3</text>
+<text x="621.1" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q4</text>
+<text x="692.7" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q1</text>
+<text x="764.4" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q2</text>
+<text x="836.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q3</text>
+<rect x="48" y="239" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="248" fill="#333" font-size="11" font-family="sans-serif">OCF ($B)</text>
+<rect x="128.0" y="239" width="10" height="10" fill="#6b7280"/>
+<text x="142.0" y="248" fill="#333" font-size="11" font-family="sans-serif">现金 CapEx ($B)</text>
+<rect x="249.5" y="239" width="10" height="10" fill="#9f1239"/>
+<text x="263.5" y="248" fill="#333" font-size="11" font-family="sans-serif">FCF ($B)</text>
+<text x="836" y="248" text-anchor="end" fill="#8a867c" font-size="10">FCF=OCF−现金CapEx</text>
 </svg></div>
-  <p class="caption">FCF 恶化主因<strong>现金 CapEx 加速</strong>（OCF 仍强）。2026Q2 首次转负；融资/债务上升见同期负债序列（表内附 CSV）。MSFT：现金 CapEx 升、FCF 仍正但 FY26Q2 FCF 仅约 $5.9B（交叉：承压不同步于「已转负」）。</p>
+  <div class="chart fcf-chart" data-fcf-view="ttm" hidden><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="alphabet-fcf-ttm" data-mode="ttm" overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">Alphabet：滚动四季度 OCF / 现金 CapEx / FCF（十亿美元）</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">208</text>
+<line x1="48" y1="84.5" x2="836" y2="84.5" stroke="#e8e4da"/>
+<text x="42" y="88.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">152</text>
+<line x1="48" y1="133.0" x2="836" y2="133.0" stroke="#e8e4da"/>
+<text x="42" y="137.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">97</text>
+<line x1="48" y1="181.5" x2="836" y2="181.5" stroke="#e8e4da"/>
+<text x="42" y="185.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">41</text>
+<line x1="48" y1="230.0" x2="836" y2="230.0" stroke="#e8e4da"/>
+<text x="42" y="234.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">-15</text>
+<line x1="48" y1="217.1" x2="836" y2="217.1" stroke="#9f1239" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="836" y="212.1" text-anchor="end" fill="#9f1239" font-size="11" font-weight="700">FCF 零线</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.3" points="262.9,125.6 334.5,108.0 406.2,101.6 477.8,100.6 549.5,85.2 621.1,73.7 692.7,65.3 764.4,55.4 836.0,60.7"/>
+<circle cx="262.9" cy="125.6" r="3" fill="#0b5f6b"/>
+<circle cx="334.5" cy="108.0" r="3" fill="#0b5f6b"/>
+<circle cx="406.2" cy="101.6" r="3" fill="#0b5f6b"/>
+<circle cx="477.8" cy="100.6" r="3" fill="#0b5f6b"/>
+<circle cx="549.5" cy="85.2" r="3" fill="#0b5f6b"/>
+<circle cx="621.1" cy="73.7" r="3" fill="#0b5f6b"/>
+<circle cx="692.7" cy="65.3" r="3" fill="#0b5f6b"/>
+<circle cx="764.4" cy="55.4" r="3" fill="#0b5f6b"/>
+<circle cx="836.0" cy="60.7" r="3" fill="#0b5f6b"/>
+<polyline fill="none" stroke="#6b7280" stroke-width="2.3" points="262.9,174.2 334.5,171.3 406.2,166.8 477.8,158.7 549.5,149.3 621.1,137.4 692.7,121.4 764.4,101.8 836.0,77.9"/>
+<circle cx="262.9" cy="174.2" r="3" fill="#6b7280"/>
+<circle cx="334.5" cy="171.3" r="3" fill="#6b7280"/>
+<circle cx="406.2" cy="166.8" r="3" fill="#6b7280"/>
+<circle cx="477.8" cy="158.7" r="3" fill="#6b7280"/>
+<circle cx="549.5" cy="149.3" r="3" fill="#6b7280"/>
+<circle cx="621.1" cy="137.4" r="3" fill="#6b7280"/>
+<circle cx="692.7" cy="121.4" r="3" fill="#6b7280"/>
+<circle cx="764.4" cy="101.8" r="3" fill="#6b7280"/>
+<circle cx="836.0" cy="77.9" r="3" fill="#6b7280"/>
+<polyline fill="none" stroke="#9f1239" stroke-width="2.3" points="262.9,168.5 334.5,153.7 406.2,151.9 477.8,159.0 549.5,153.0 621.1,153.3 692.7,161.0 764.4,170.7 836.0,199.9"/>
+<circle cx="262.9" cy="168.5" r="3" fill="#9f1239"/>
+<circle cx="334.5" cy="153.7" r="3" fill="#9f1239"/>
+<circle cx="406.2" cy="151.9" r="3" fill="#9f1239"/>
+<circle cx="477.8" cy="159.0" r="3" fill="#9f1239"/>
+<circle cx="549.5" cy="153.0" r="3" fill="#9f1239"/>
+<circle cx="621.1" cy="153.3" r="3" fill="#9f1239"/>
+<circle cx="692.7" cy="161.0" r="3" fill="#9f1239"/>
+<circle cx="764.4" cy="170.7" r="3" fill="#9f1239"/>
+<circle cx="836.0" cy="199.9" r="3" fill="#9f1239"/>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;滚动四季 FCF 下降（仍为正）&quot;, &quot;fiscal&quot;: &quot;26Q3&quot;, &quot;period_end&quot;: &quot;2026-09-30&quot;, &quot;disclose&quot;: &quot;2026-10-29&quot;, &quot;mark_date&quot;: &quot;2026-10-29&quot;, &quot;price&quot;: 283.82, &quot;prev_fcf&quot;: 53.27, &quot;curr_fcf&quot;: 19.75, &quot;ocf&quot;: 179.55, &quot;capex&quot;: 159.8, &quot;formula&quot;: &quot;FCF = OCF − 现金 CapEx（正值=支出）&quot;, &quot;driver&quot;: &quot;CapEx 上升主导（OCF 仍强）&quot;, &quot;source&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;, &quot;filing&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;}" style="cursor:pointer"><line x1="836.0" y1="36" x2="836.0" y2="230" stroke="#a16207" stroke-dasharray="4 3" opacity="0.65"/><circle cx="836.0" cy="199.9" r="6" fill="#a16207" stroke="#fff" stroke-width="1.8"/><text x="844.0" y="189.9" fill="#a16207" font-size="11">滚动四季仍为正·下降</text></g>
+<text x="48.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">23Q4</text>
+<text x="119.6" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q1</text>
+<text x="191.3" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q2</text>
+<text x="262.9" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q3</text>
+<text x="334.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q4</text>
+<text x="406.2" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q1</text>
+<text x="477.8" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q2</text>
+<text x="549.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q3</text>
+<text x="621.1" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q4</text>
+<text x="692.7" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q1</text>
+<text x="764.4" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q2</text>
+<text x="836.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q3</text>
+<rect x="48" y="239" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="248" fill="#333" font-size="11" font-family="sans-serif">滚动OCF ($B)</text>
+<rect x="150.0" y="239" width="10" height="10" fill="#6b7280"/>
+<text x="164.0" y="248" fill="#333" font-size="11" font-family="sans-serif">滚动现金 CapEx ($B)</text>
+<rect x="293.5" y="239" width="10" height="10" fill="#9f1239"/>
+<text x="307.5" y="248" fill="#333" font-size="11" font-family="sans-serif">滚动 FCF ($B)</text>
+<text x="836" y="248" text-anchor="end" fill="#8a867c" font-size="10">前三季滚动值缺，断点保留</text>
+</svg></div>
+  <p class="caption">公式 <span class="mono">FCF = OCF − 现金 CapEx</span>（CapEx 以正值表示支出）。核对结果：<strong>单季 FCF 于 2026Q2 首次转负</strong>（−$5.9B），2026Q3 再负（−$9.1B）；同期 OCF 仍为正，主因 CapEx 加速。<strong>滚动四季度 FCF 至 2026Q3 仍为正</strong>（约 $19.7B），但已较 2026Q2 的 $53.3B 明显下降。悬停/点击红点查看财季、披露日、前后 FCF、OCF/CapEx 与股价。</p>
   <div class="table-wrap"><table>
-    <thead><tr><th>标记</th><th>时点</th><th>状态</th></tr></thead>
+    <thead><tr><th>标记</th><th>单季度</th><th>滚动四季度</th><th>状态</th></tr></thead>
     <tbody>
-      <tr><td>FCF 开始转弱</td><td>2025Q2 FCF $5.3B（相对 2024Q4 $24.8B）</td><td>已观察</td></tr>
-      <tr class="neg"><td>首次转负</td><td>2026Q2</td><td>已确认</td></tr>
-      <tr class="neg"><td>连续转负</td><td>2026Q3</td><td>已确认</td></tr>
-      <tr class="open"><td>滚动四季转负</td><td>—</td><td>待表内确认后标注</td></tr>
-      <tr class="open"><td>CapEx 指引下调 / 实际收缩</td><td>—</td><td>尚未；CapEx 仍升</td></tr>
+      <tr><td>FCF 开始转弱</td><td>2025Q2 $5.3B（相对 2024Q4 $24.8B）</td><td>2025Q2 起滚动高位回落</td><td>已观察</td></tr>
+      <tr class="neg"><td>首次转负</td><td>2026Q2（披露 2026-07-23）</td><td>—</td><td>单季已确认；滚动四季未转负</td></tr>
+      <tr class="neg"><td>连续转负</td><td>2026Q3（披露 2026-10-29）</td><td>—</td><td>单季已确认</td></tr>
+      <tr class="open"><td>滚动四季转负</td><td>—</td><td>至 2026Q3 仍为正（$19.7B）</td><td>尚未；标注为下降</td></tr>
+      <tr class="open"><td>CapEx 指引下调 / 实际收缩</td><td>—</td><td>—</td><td>尚未；现金 CapEx 仍升</td></tr>
     </tbody>
   </table></div>
+  <p class="footnote">表中「—」= 该口径下未发生或缺少可比结论。滚动四季前三个观察点因窗口不足而断点留空，不插值。</p>
+</div>
+
 </section>
 
 <section class="block" id="hist">
@@ -418,13 +512,25 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
   </table></div>
 </section>
 
-<section class="block" id="prices">
-  <h2>6. 多年股价走势：哪一层先见顶？</h2>
-  <p>主图横轴为<strong>实际日期</strong>，覆盖各案例从扩张到调整的完整观察期；股价为复权收盘并<strong>归一化起点=100</strong>，叠加市场基准。每个事件保留竖向虚线，并在<strong>虚线与对应公司股价曲线的交点</strong>标注圆点；标签可错开并用短引线指回。标注日=披露日（盘后→下一交易日）。悬停圆点查看事件名、财季、标注日与当日复权价；<strong>点击</strong>可放大 ±60 交易日。</p>
-  <div class="note">读图顺序：① 哪条曲线最先见顶；② 顶附近对应哪条基本面标注；③ 上游转弱后，买方与下游是同步下跌还是分化。</div>
 
-  <h3>6.1 美国互联网周期（1998–2002）</h3>
-  <div class="chart long-chart" id="chart-us"><svg viewBox="0 0 1000 440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="long-price-svg" data-case="us" overflow="visible">
+<section class="block" id="prices">
+  <h2>6. 股价与事件：上游盈利 → 买方现金流 → 采购预算 → 股价反应</h2>
+  <p>每个案例先给<strong>覆盖整段观察期的股价主图</strong>，再按<strong>上游供应商 → 采购/建设方 → 下游应用或终端需求</strong>排列基本面。共享实际日期轴；拐点时间线点击可跳到股价图与对应基本面图。研究问题：财务信号何时公开，各层股价是领先还是滞后。</p>
+  <div class="note">读图顺序：① 时间线上的拐点先后；② 股价曲线谁先见顶；③ 基本面图上同一信号是否已可确认；④ 悬停比较披露日与标注日。</div>
+
+  <div class="case-panel" id="case-us" data-case="us" data-start="1998-01-01" data-end="2002-12-31">
+    <h3>6.1 美国互联网周期（1998–2002）</h3>
+    <p class="footnote sync-readout" id="sync-us" hidden>联动日期：<span class="mono">—</span></p>
+    <div class="timeline" id="tl-us">
+      <span class="tl-label">拐点时间线</span>
+      <a class="tl" href="#chart-us" data-jump="fund-cisco-gm" data-eid="cisco_gm_peak"><span class="t">1998-08</span> Cisco 毛利率见顶</a>
+      <a class="tl" href="#chart-us" data-jump="fund-cisco-gm" data-eid="cisco_gm_confirm"><span class="t">1998-11</span> 毛利率高点确认</a>
+      <a class="tl" href="#chart-us" data-eid="nasdaq_peak"><span class="t">2000-03-10</span> 纳指见顶</a>
+      <a class="tl" href="#chart-us" data-jump="fund-cisco-gp" data-eid="cisco_gp_peak_print"><span class="t">2001-02</span> 毛利额峰值披露</a>
+      <a class="tl" href="#chart-us" data-jump="fund-bs-fcf" data-eid="bs_fcf_neg"><span class="t">2001-05</span> BellSouth FCF 转负</a>
+      <a class="tl" href="#chart-us" data-jump="fund-cisco-gp" data-eid="cisco_gp_confirm_yoy"><span class="t">2001-05</span> 毛利额确认/同比降</a>
+    </div>
+    <div class="chart long-chart" id="chart-us"><svg viewBox="0 0 1000 440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="long-price-svg" data-case="us" overflow="visible">
 <text x="54" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">美国互联网周期：复权股价归一化（起点=100）· 1998–2002 · 泡沫前预警检验</text>
 <line x1="54" y1="48.0" x2="972" y2="48.0" stroke="#e8e4da"/>
 <text x="48" y="52.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">2456</text>
@@ -482,9 +588,8 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 <g class="ev-marker us-ev" data-eid="cisco_gp_confirm_yoy" data-zoom="cisco_rev_peak" data-tipjson="{&quot;company&quot;: &quot;Cisco&quot;, &quot;layer&quot;: &quot;上游卖方&quot;, &quot;event&quot;: &quot;毛利额确认/同比降&quot;, &quot;fiscal&quot;: &quot;峰值 FY2001 Q2；确认/同比 FY2001 Q3（截止 2001-04-28）&quot;, &quot;disclose&quot;: &quot;2001-02-06&quot;, &quot;confirm&quot;: &quot;2001-05-08&quot;, &quot;confirm_note&quot;: &quot;同一披露日同时完成两件事：(1) 确认毛利额阶段高点；(2) 首次同比大幅下降（含 $2.25B 存货计提）。盘后披露→标注 2001-05-09。&quot;, &quot;mark_date&quot;: &quot;2001-05-09&quot;, &quot;metric&quot;: &quot;GAAP 毛利额 / YoY&quot;, &quot;prev2&quot;: [&quot;峰值季 $4167M&quot;, &quot;去年同期 FY2000 Q3 $3171M&quot;], &quot;curr&quot;: &quot;确认季 $328M（同比约 −90%）&quot;, &quot;price&quot;: 12.22, &quot;source&quot;: &quot;Cisco newsroom 2001-05-08；data/cisco.csv&quot;, &quot;vs_nasdaq&quot;: &quot;见顶后确认&quot;, &quot;lag_nasdaq&quot;: &quot;滞后 425 日（约 4.7 季）&quot;, &quot;company_peak&quot;: &quot;2000-03-27&quot;, &quot;lag_company_peak&quot;: &quot;滞后 408 日（约 4.5 季）&quot;}" style="cursor:pointer"><line x1="669.7" y1="326.2" x2="681.7" y2="265.2" stroke="#b45309" stroke-width="1" opacity="0.75"/><circle cx="669.7" cy="326.2" r="5.5" fill="#b45309" stroke="#fff" stroke-width="1.6"/><text x="681.7" y="269.2" text-anchor="start" fill="#b45309" font-size="10" font-family="sans-serif">毛利额确认/同比降</text></g>
 <g class="ev-marker us-ev" data-eid="vz_fcf_ongoing" data-zoom="verizon_fcf_proxy" data-tipjson="{&quot;company&quot;: &quot;Verizon&quot;, &quot;layer&quot;: &quot;电信运营商买方&quot;, &quot;event&quot;: &quot;FCF持续为负(样本)&quot;, &quot;fiscal&quot;: &quot;样本起点 2001Q1（持续为负）&quot;, &quot;disclose&quot;: &quot;2001-05-15&quot;, &quot;confirm&quot;: &quot;2001-08-03&quot;, &quot;confirm_note&quot;: &quot;观察窗内首个可得季度已为负（−$1376M），不能判断泡沫前“由正转负”。FCF 明细以 10-Q 现金流量表为准（filed 2001-05-15）；Q2 10-Q（约 2001-08）仍为负，进一步确认样本内持续为负。&quot;, &quot;mark_date&quot;: &quot;2001-05-15&quot;, &quot;metric&quot;: &quot;FCF&quot;, &quot;prev2&quot;: [&quot;更早季频：缺可比&quot;, &quot;2001Q2 FCF −$129M&quot;], &quot;curr&quot;: &quot;2001Q1 FCF −$1376M&quot;, &quot;price&quot;: 13.75, &quot;source&quot;: &quot;Verizon Form 10-Q filed 2001-05-15；data/verizon.csv&quot;, &quot;vs_nasdaq&quot;: &quot;见顶后确认&quot;, &quot;lag_nasdaq&quot;: &quot;滞后 431 日（约 4.7 季）&quot;, &quot;company_peak&quot;: &quot;1999-10-04&quot;, &quot;lag_company_peak&quot;: &quot;滞后 589 日（约 6.5 季）&quot;}" style="cursor:pointer"><line x1="672.7" y1="334.4" x2="660.7" y2="337.4" stroke="#9f1239" stroke-width="1" opacity="0.75"/><circle cx="672.7" cy="334.4" r="5.5" fill="#9f1239" stroke="#fff" stroke-width="1.6"/><text x="660.7" y="341.4" text-anchor="end" fill="#9f1239" font-size="10" font-family="sans-serif">FCF持续为负(样本)</text></g>
 </svg></div>
-  <p class="caption">圆点落在对应公司股价曲线与<strong>标注日（披露/确认后首个可交易日；盘后披露取次日）</strong>交点；黑色虚线为纳指见顶 2000-03-10。悬停或点击圆点查看财季、前后两期数值、相对纳指/本公司股价高点的领先滞后与来源。BellSouth 已退市，其 FCF 事件圆点落在同相位 Verizon 曲线。图上默认短标签；毛利率峰值与毛利额峰值分开标注。</p>
-
-<div class="answer" id="us-bubble-verdict">
+    <p class="caption">圆点=披露/确认后首个可交易日与该公司股价曲线交点；黑色虚线=纳指见顶。悬停查看财季、前后两期、相对纳指/股价高点领先滞后。</p>
+    <div class="answer" id="us-bubble-verdict">
   <h3>泡沫前预警检验（对照纳指见顶 2000-03-10）</h3>
   <ul>
     <li><strong>见顶前已公开：</strong>Cisco <em>毛利率%</em> 峰值于 <strong>1998-08-04</strong> 披露（约领先纳指见顶 19 个月）；1998-11-10 下一季确认阶段高点。但同期毛利额与收入仍升，单独 GM% 信号未被定价为周期顶部。</li>
@@ -496,8 +601,171 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
   </ul>
 </div>
 
-<h3>6.2 中国建设/地产周期（2002–2008）</h3>
-  <div class="chart long-chart" id="chart-cn"><svg viewBox="0 0 980 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="long-price-svg" data-case="cn" overflow="visible">
+    <div class="layer-block" id="fund-cisco-gm">
+      <h4>上游供应商 — Cisco 毛利率 / 毛利额</h4>
+      <div class="chart"><svg viewBox="0 0 860 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="fund-cisco-gm"  overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">上游卖方 Cisco：GAAP 毛利率 %</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">75</text>
+<line x1="48" y1="69.5" x2="836" y2="69.5" stroke="#e8e4da"/>
+<text x="42" y="73.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">57</text>
+<line x1="48" y1="103.0" x2="836" y2="103.0" stroke="#e8e4da"/>
+<text x="42" y="107.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">39</text>
+<line x1="48" y1="136.5" x2="836" y2="136.5" stroke="#e8e4da"/>
+<text x="42" y="140.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">20</text>
+<line x1="48" y1="170.0" x2="836" y2="170.0" stroke="#e8e4da"/>
+<text x="42" y="174.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">2</text>
+<polyline fill="none" stroke="#166534" stroke-width="2.3" points="48.0,54.1 91.8,53.6 135.6,53.5 179.3,54.0 223.1,54.6 266.9,54.9 310.7,55.7 354.4,55.2 398.2,55.4 442.0,55.9 485.8,56.7 529.6,57.6 573.3,60.8 617.1,161.1 660.9,70.1 704.7,63.1 748.4,61.0"/>
+<circle cx="48.0" cy="54.1" r="3" fill="#166534"/>
+<circle cx="91.8" cy="53.6" r="3" fill="#166534"/>
+<circle cx="135.6" cy="53.5" r="3" fill="#166534"/>
+<circle cx="179.3" cy="54.0" r="3" fill="#166534"/>
+<circle cx="223.1" cy="54.6" r="3" fill="#166534"/>
+<circle cx="266.9" cy="54.9" r="3" fill="#166534"/>
+<circle cx="310.7" cy="55.7" r="3" fill="#166534"/>
+<circle cx="354.4" cy="55.2" r="3" fill="#166534"/>
+<circle cx="398.2" cy="55.4" r="3" fill="#166534"/>
+<circle cx="442.0" cy="55.9" r="3" fill="#166534"/>
+<circle cx="485.8" cy="56.7" r="3" fill="#166534"/>
+<circle cx="529.6" cy="57.6" r="3" fill="#166534"/>
+<circle cx="573.3" cy="60.8" r="3" fill="#166534"/>
+<circle cx="617.1" cy="161.1" r="3" fill="#166534"/>
+<circle cx="660.9" cy="70.1" r="3" fill="#166534"/>
+<circle cx="704.7" cy="63.1" r="3" fill="#166534"/>
+<circle cx="748.4" cy="61.0" r="3" fill="#166534"/>
+<circle cx="836.0" cy="49.4" r="3" fill="#166534"/>
+<text x="48.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q1</text>
+<text x="91.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q2</text>
+<text x="135.6" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q3</text>
+<text x="179.3" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q4</text>
+<text x="223.1" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q1</text>
+<text x="266.9" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q2</text>
+<text x="310.7" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q3</text>
+<text x="354.4" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q4</text>
+<text x="398.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q1</text>
+<text x="442.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q2</text>
+<text x="485.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q3</text>
+<text x="529.6" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q4</text>
+<text x="573.3" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q1</text>
+<text x="617.1" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q2</text>
+<text x="660.9" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q3</text>
+<text x="704.7" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q4</text>
+<text x="748.4" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02Q1</text>
+<text x="792.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02Q2</text>
+<text x="836.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02Q3</text>
+<rect x="48" y="179" width="10" height="10" fill="#166534"/>
+<text x="62" y="188" fill="#333" font-size="11" font-family="sans-serif">毛利率 %</text>
+</svg></div>
+      <div class="chart"><svg viewBox="0 0 860 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="fund-cisco-gp"  overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">上游卖方 Cisco：GAAP 毛利额（十亿美元）</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">5</text>
+<line x1="48" y1="69.5" x2="836" y2="69.5" stroke="#e8e4da"/>
+<text x="42" y="73.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">3</text>
+<line x1="48" y1="103.0" x2="836" y2="103.0" stroke="#e8e4da"/>
+<text x="42" y="107.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">2</text>
+<line x1="48" y1="136.5" x2="836" y2="136.5" stroke="#e8e4da"/>
+<text x="42" y="140.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">1</text>
+<line x1="48" y1="170.0" x2="836" y2="170.0" stroke="#e8e4da"/>
+<text x="42" y="174.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">0</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.3" points="48.0,132.2 91.8,128.9 135.6,124.9 179.3,121.3 223.1,117.0 266.9,111.1 310.7,103.8 354.4,97.5 398.2,88.8 442.0,78.4 485.8,64.1 529.6,50.2 573.3,49.4 617.1,161.1 660.9,99.8 704.7,92.3 748.4,84.2"/>
+<circle cx="48.0" cy="132.2" r="3" fill="#0b5f6b"/>
+<circle cx="91.8" cy="128.9" r="3" fill="#0b5f6b"/>
+<circle cx="135.6" cy="124.9" r="3" fill="#0b5f6b"/>
+<circle cx="179.3" cy="121.3" r="3" fill="#0b5f6b"/>
+<circle cx="223.1" cy="117.0" r="3" fill="#0b5f6b"/>
+<circle cx="266.9" cy="111.1" r="3" fill="#0b5f6b"/>
+<circle cx="310.7" cy="103.8" r="3" fill="#0b5f6b"/>
+<circle cx="354.4" cy="97.5" r="3" fill="#0b5f6b"/>
+<circle cx="398.2" cy="88.8" r="3" fill="#0b5f6b"/>
+<circle cx="442.0" cy="78.4" r="3" fill="#0b5f6b"/>
+<circle cx="485.8" cy="64.1" r="3" fill="#0b5f6b"/>
+<circle cx="529.6" cy="50.2" r="3" fill="#0b5f6b"/>
+<circle cx="573.3" cy="49.4" r="3" fill="#0b5f6b"/>
+<circle cx="617.1" cy="161.1" r="3" fill="#0b5f6b"/>
+<circle cx="660.9" cy="99.8" r="3" fill="#0b5f6b"/>
+<circle cx="704.7" cy="92.3" r="3" fill="#0b5f6b"/>
+<circle cx="748.4" cy="84.2" r="3" fill="#0b5f6b"/>
+<circle cx="836.0" cy="75.1" r="3" fill="#0b5f6b"/>
+<text x="48.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q1</text>
+<text x="91.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q2</text>
+<text x="135.6" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q3</text>
+<text x="179.3" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">98Q4</text>
+<text x="223.1" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q1</text>
+<text x="266.9" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q2</text>
+<text x="310.7" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q3</text>
+<text x="354.4" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">99Q4</text>
+<text x="398.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q1</text>
+<text x="442.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q2</text>
+<text x="485.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q3</text>
+<text x="529.6" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">00Q4</text>
+<text x="573.3" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q1</text>
+<text x="617.1" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q2</text>
+<text x="660.9" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q3</text>
+<text x="704.7" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">01Q4</text>
+<text x="748.4" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02Q1</text>
+<text x="792.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02Q2</text>
+<text x="836.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02Q3</text>
+<rect x="48" y="179" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="188" fill="#333" font-size="11" font-family="sans-serif">毛利额 $B</text>
+</svg></div>
+      <p class="footnote">毛利率峰值（1998）与毛利额峰值（2001）分开标注。Corning 无完整分部 GM%，改用分部盈利作利润代理（见股价图标注）。</p>
+    </div>
+    <div class="layer-block" id="fund-bs-fcf">
+      <h4>采购与建设方 — BellSouth FCF（Verizon 为同相位股价代理）</h4>
+      <div class="chart"><svg viewBox="0 0 860 250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="fund-bs-fcf"  overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">采购/建设方 BellSouth：季度 FCF（百万美元）</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">1248</text>
+<line x1="48" y1="72.0" x2="836" y2="72.0" stroke="#e8e4da"/>
+<text x="42" y="76.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">891</text>
+<line x1="48" y1="108.0" x2="836" y2="108.0" stroke="#e8e4da"/>
+<text x="42" y="112.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">533</text>
+<line x1="48" y1="144.0" x2="836" y2="144.0" stroke="#e8e4da"/>
+<text x="42" y="148.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">176</text>
+<line x1="48" y1="180.0" x2="836" y2="180.0" stroke="#e8e4da"/>
+<text x="42" y="184.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">-181</text>
+<line x1="48" y1="161.7" x2="836" y2="161.7" stroke="#9f1239" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="836" y="156.7" text-anchor="end" fill="#9f1239" font-size="11" font-weight="700">FCF 零线</text>
+<polyline fill="none" stroke="#9f1239" stroke-width="2.3" points="48.0,82.4 205.6,86.9 363.2,170.4 520.8,95.6 678.4,54.9 836.0,50.4"/>
+<circle cx="48.0" cy="82.4" r="3" fill="#9f1239"/>
+<circle cx="205.6" cy="86.9" r="3" fill="#9f1239"/>
+<circle cx="363.2" cy="170.4" r="3" fill="#9f1239"/>
+<circle cx="520.8" cy="95.6" r="3" fill="#9f1239"/>
+<circle cx="678.4" cy="54.9" r="3" fill="#9f1239"/>
+<circle cx="836.0" cy="50.4" r="3" fill="#9f1239"/>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;BellSouth&quot;, &quot;event&quot;: &quot;FCF首次转负&quot;, &quot;fiscal&quot;: &quot;01Q1&quot;, &quot;curr_fcf&quot;: -86.0, &quot;formula&quot;: &quot;FCF=OCF−现金CapEx&quot;, &quot;source&quot;: &quot;data/bellsouth.csv / SEC 10-Q&quot;}" style="cursor:pointer"><line x1="363.2" y1="36" x2="363.2" y2="180" stroke="#9f1239" stroke-dasharray="4 3" opacity="0.65"/><circle cx="363.2" cy="170.4" r="6" fill="#9f1239" stroke="#fff" stroke-width="1.8"/><text x="371.2" y="160.4" fill="#9f1239" font-size="11">FCF首次转负</text></g>
+<text x="48.0" y="236" text-anchor="middle" fill="#5c5a55" font-size="10">00Q1</text>
+<text x="205.6" y="236" text-anchor="middle" fill="#5c5a55" font-size="10">00Q2</text>
+<text x="363.2" y="236" text-anchor="middle" fill="#5c5a55" font-size="10">01Q1</text>
+<text x="520.8" y="236" text-anchor="middle" fill="#5c5a55" font-size="10">01Q2</text>
+<text x="678.4" y="236" text-anchor="middle" fill="#5c5a55" font-size="10">02Q1</text>
+<text x="836.0" y="236" text-anchor="middle" fill="#5c5a55" font-size="10">02Q2</text>
+<rect x="48" y="189" width="10" height="10" fill="#9f1239"/>
+<text x="62" y="198" fill="#333" font-size="11" font-family="sans-serif">FCF ($M)</text>
+</svg></div>
+      <details class="more"><summary>展开：Verizon 样本与替换说明</summary>
+        <p>BellSouth 已退市，股价图用 Verizon 同相位曲线承载买方事件圆点。Verizon 样本自 2001Q1 起 FCF 已为负，标「持续为负（样本）」，无法还原泡沫前由正转负时点。FCF 均按 <span class="mono">OCF − 现金 CapEx</span> 计算。</p>
+      </details>
+      <p class="footnote">BellSouth 1998–1999 连续季频现金流未齐，无法确认更早是否已转负；样本覆盖 2000Q1 起。表内缺季以断点保留。</p>
+    </div>
+    <div class="layer-block" id="fund-amzn">
+      <h4>下游应用 — Amazon（FCF 持续为负）</h4>
+      <p>观察期内 Amazon FCF <strong>持续为负</strong>（非「首次由正转负」）。1999Q3 扩张期进一步恶化，已在股价图标注。完整逐季对齐仍有缺口。</p>
+      <p class="footnote">亚马逊 1998–2000 部分季度现金流量表未完全逐季对齐；拐点判断按「持续为负 + 恶化可见」处理，不用「首次转负」措辞。</p>
+    </div>
+  </div>
+
+  <div class="case-panel" id="case-cn" data-case="cn" data-start="2002-01-01" data-end="2008-12-31">
+    <h3>6.2 中国建设/地产周期（2002–2008）</h3>
+    <p class="footnote sync-readout" id="sync-cn" hidden>联动日期：<span class="mono">—</span></p>
+    <div class="timeline" id="tl-cn">
+      <span class="tl-label">拐点时间线</span>
+      <a class="tl" href="#chart-cn" data-jump="fund-conch-gm"><span class="t">2004H1</span> 海螺毛利率阶段高点</a>
+      <a class="tl" href="#chart-cn"><span class="t">2007-10</span> 海螺股价窗内高点</a>
+      <a class="tl" href="#chart-cn"><span class="t">2007-11</span> 华润置地股价高点</a>
+    </div>
+    <div class="chart long-chart" id="chart-cn"><svg viewBox="0 0 980 380" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="long-price-svg" data-case="cn" overflow="visible">
 <text x="54" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">中国建设/地产周期：复权股价归一化（起点=100）· 2002–2008</text>
 <line x1="54" y1="44.0" x2="956" y2="44.0" stroke="#e8e4da"/>
 <text x="48" y="48.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">6204</text>
@@ -541,10 +809,81 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 <circle cx="798.3" cy="74.4" r="4.5" fill="none" stroke="#166534" stroke-width="1.4" opacity="0.55"/>
 <circle cx="805.7" cy="237.2" r="4.5" fill="none" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
 </svg></div>
-  <p class="caption">海螺水泥 卖方 窗内高点 <span class="mono">2007-10-16</span>（归一化 5125）；其后最大回撤 -71%（2007-10-16→2008-10-20）；华润置地 买方代理 窗内高点 <span class="mono">2007-11-08</span>（归一化 1422）；其后最大回撤 -64%（2007-11-08→2008-10-30）。华润置地为开发商买方<strong>代理样本</strong>（非全国开发商统一 FCF）。沥青/钢筋上市公司连续行情未齐，标为缺口。</p>
+    <p class="caption">华润置地为开发商买方股价代理（非全国开发商统一 FCF）。沥青/钢筋上市公司连续行情未齐。</p>
+    <div class="layer-block" id="fund-conch-gm">
+      <h4>上游供应商 — 海螺水泥毛利率</h4>
+      <div class="chart"><svg viewBox="0 0 860 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="fund-conch-gm"  overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">上游供应商 海螺水泥：毛利率 %</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">51</text>
+<line x1="48" y1="69.5" x2="836" y2="69.5" stroke="#e8e4da"/>
+<text x="42" y="73.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">43</text>
+<line x1="48" y1="103.0" x2="836" y2="103.0" stroke="#e8e4da"/>
+<text x="42" y="107.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">34</text>
+<line x1="48" y1="136.5" x2="836" y2="136.5" stroke="#e8e4da"/>
+<text x="42" y="140.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">25</text>
+<line x1="48" y1="170.0" x2="836" y2="170.0" stroke="#e8e4da"/>
+<text x="42" y="174.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">17</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.3" points="48.0,100.2 97.2,102.5 146.5,92.5 195.8,61.4 245.0,49.4 294.2,154.6 343.5,161.1 392.8,140.4 442.0,128.4 491.2,126.1 540.5,122.8 589.8,115.3 639.0,111.8 688.2,137.1 737.5,116.7 786.8,140.4 836.0,154.2"/>
+<circle cx="48.0" cy="100.2" r="3" fill="#0b5f6b"/>
+<circle cx="97.2" cy="102.5" r="3" fill="#0b5f6b"/>
+<circle cx="146.5" cy="92.5" r="3" fill="#0b5f6b"/>
+<circle cx="195.8" cy="61.4" r="3" fill="#0b5f6b"/>
+<circle cx="245.0" cy="49.4" r="3" fill="#0b5f6b"/>
+<circle cx="294.2" cy="154.6" r="3" fill="#0b5f6b"/>
+<circle cx="343.5" cy="161.1" r="3" fill="#0b5f6b"/>
+<circle cx="392.8" cy="140.4" r="3" fill="#0b5f6b"/>
+<circle cx="442.0" cy="128.4" r="3" fill="#0b5f6b"/>
+<circle cx="491.2" cy="126.1" r="3" fill="#0b5f6b"/>
+<circle cx="540.5" cy="122.8" r="3" fill="#0b5f6b"/>
+<circle cx="589.8" cy="115.3" r="3" fill="#0b5f6b"/>
+<circle cx="639.0" cy="111.8" r="3" fill="#0b5f6b"/>
+<circle cx="688.2" cy="137.1" r="3" fill="#0b5f6b"/>
+<circle cx="737.5" cy="116.7" r="3" fill="#0b5f6b"/>
+<circle cx="786.8" cy="140.4" r="3" fill="#0b5f6b"/>
+<circle cx="836.0" cy="154.2" r="3" fill="#0b5f6b"/>
+<text x="48.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02-06</text>
+<text x="97.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">02-12</text>
+<text x="146.5" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">03-06</text>
+<text x="195.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">03-12</text>
+<text x="245.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">04-06</text>
+<text x="294.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">04-12</text>
+<text x="343.5" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">05-06</text>
+<text x="392.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">05-12</text>
+<text x="442.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">06-06</text>
+<text x="491.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">06-12</text>
+<text x="540.5" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">07-06</text>
+<text x="589.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">07-09</text>
+<text x="639.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">07-12</text>
+<text x="688.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">08-03</text>
+<text x="737.5" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">08-06</text>
+<text x="786.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">08-09</text>
+<text x="836.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">08-12</text>
+<rect x="48" y="179" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="188" fill="#333" font-size="11" font-family="sans-serif">毛利率 %</text>
+</svg></div>
+      <p class="footnote">买方宏观到位资金/新开工为年频代理，未见美式季度 FCF 转负序列；上市开发商统一 FCF 未齐。缺数不影响「材料 GM 先于收入见顶」的已核实结论。</p>
+    </div>
+    <div class="layer-block">
+      <h4>采购与建设方 / 终端需求</h4>
+      <p>建设与开发投资、商品房销售等以宏观年/月频代理观察需求，详见 <a href="./history.html">history.html</a> 与数据下载。本页优先保留对拐点判断最直接的海螺 GM 与股价对照。</p>
+      <details class="more"><summary>展开：代理指标说明</summary>
+        <p>开发投资 / 到位资金 / 新开工衡量「采购与建设」强度；商品房销售面积衡量终端需求。它们<strong>不是</strong>公司级 FCF，不能直接等同美国运营商现金流转负。</p>
+      </details>
+    </div>
+  </div>
 
-  <h3>6.3 AI 周期（2020–最新，仍在演进）</h3>
-  <div class="chart long-chart" id="chart-ai"><svg viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="long-price-svg" data-case="ai" overflow="visible">
+  <div class="case-panel" id="case-ai" data-case="ai" data-start="2020-01-01" data-end="2026-12-31">
+    <h3>6.3 AI 周期（2020–最新，仍在演进）</h3>
+    <p class="footnote sync-readout" id="sync-ai" hidden>联动日期：<span class="mono">—</span></p>
+    <div class="timeline" id="tl-ai">
+      <span class="tl-label">拐点时间线</span>
+      <a class="tl" href="#chart-ai" data-jump="fund-nvda-gm" data-eid="nvda_gm"><span class="t">2024-05-22</span> NVIDIA 毛利率阶段高点</a>
+      <a class="tl" href="#chart-ai" data-jump="ai-buyer-alphabet" data-eid="googl_fcf_neg"><span class="t">2026-07-23</span> Alphabet 单季 FCF 转负</a>
+      <a class="tl" href="#chart-ai" data-eid="googl_fcf_neg2"><span class="t">2026-10-29</span> 单季 FCF 连续转负</a>
+      <a class="tl" href="#alphabet-fcf-panel"><span class="t">至 2026Q3</span> 滚动四季 FCF 仍为正·下降</a>
+    </div>
+    <div class="chart long-chart" id="chart-ai"><svg viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="long-price-svg" data-case="ai" overflow="visible">
 <text x="54" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">AI 周期：复权股价归一化（起点=100）· 2020–最新</text>
 <line x1="54" y1="44.0" x2="956" y2="44.0" stroke="#e8e4da"/>
 <text x="48" y="48.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">4568</text>
@@ -586,16 +925,229 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 <line x1="915.4" y1="44" x2="915.4" y2="358" stroke="#9f1239" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.75"/>
 <line x1="950.6" y1="44" x2="950.6" y2="358" stroke="#9f1239" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.75"/>
 <g class="ev-marker" data-eid="nvda_gm_high" data-zoom="nvda_gm_stage_high" data-tip="毛利率阶段高点 · NVDA · FY25Q1 · 标注日 2024-05-22 · 当日复权价 94.68 · 待窗口结束确认" style="cursor:pointer"><title>毛利率阶段高点 · NVDA · FY25Q1 · 标注日 2024-05-22 · 当日复权价 94.68 · 待窗口结束确认</title><line x1="630.5" y1="238.3" x2="642.5" y2="241.3" stroke="#166534" stroke-width="1" opacity="0.7"/><circle cx="630.5" cy="238.3" r="5.5" fill="#166534" stroke="#fff" stroke-width="1.6"/><text x="642.5" y="245.3" text-anchor="start" fill="#166534" font-size="10" font-family="sans-serif">毛利率阶段高点</text></g>
-<g class="ev-marker" data-eid="googl_fcf_neg" data-zoom="googl_fcf_first_neg" data-tip="自由现金流首次转负 · GOOGL · 2026Q2 · 标注日 2026-07-23 · 当日复权价 317.49" style="cursor:pointer"><title>自由现金流首次转负 · GOOGL · 2026Q2 · 标注日 2026-07-23 · 当日复权价 317.49</title><line x1="915.4" y1="311.5" x2="903.4" y2="314.5" stroke="#9f1239" stroke-width="1" opacity="0.7"/><circle cx="915.4" cy="311.5" r="5.5" fill="#9f1239" stroke="#fff" stroke-width="1.6"/><text x="903.4" y="318.5" text-anchor="end" fill="#9f1239" font-size="10" font-family="sans-serif">自由现金流首次转负</text></g>
-<g class="ev-marker" data-eid="googl_fcf_neg2" data-zoom="" data-tip="自由现金流连续转负 · GOOGL · 2026Q3 · 标注日 2026-10-29 · 当日复权价 283.82" style="cursor:pointer"><title>自由现金流连续转负 · GOOGL · 2026Q3 · 标注日 2026-10-29 · 当日复权价 283.82</title><line x1="950.6" y1="314.7" x2="938.6" y2="335.7" stroke="#9f1239" stroke-width="1" opacity="0.7"/><circle cx="950.6" cy="314.7" r="5.5" fill="#9f1239" stroke="#fff" stroke-width="1.6"/><text x="938.6" y="339.7" text-anchor="end" fill="#9f1239" font-size="10" font-family="sans-serif">自由现金流连续转负</text></g>
+<g class="ev-marker us-ev" data-eid="googl_fcf_neg" data-zoom="googl_fcf_first_neg" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;单季 FCF 转负&quot;, &quot;fiscal&quot;: &quot;2026Q2&quot;, &quot;disclose&quot;: &quot;2026-07-23&quot;, &quot;mark_date&quot;: &quot;2026-07-23&quot;, &quot;prev2&quot;: [&quot;2026Q1 FCF $10.1B&quot;, &quot;2025Q4 FCF $24.6B&quot;], &quot;curr&quot;: &quot;2026Q2 FCF −$5.9B&quot;, &quot;ocf&quot;: &quot;OCF $39.1B&quot;, &quot;capex&quot;: &quot;现金 CapEx $44.9B&quot;, &quot;price&quot;: 317.49, &quot;source&quot;: &quot;Alphabet 2026Q2 业绩披露；data/alphabet.csv&quot;, &quot;driver&quot;: &quot;CapEx 增加（OCF 仍正）&quot;}" style="cursor:pointer"><title>自由现金流首次转负 · GOOGL · 2026Q2 · 标注日 2026-07-23 · 当日复权价 317.49</title><line x1="915.4" y1="311.5" x2="903.4" y2="314.5" stroke="#9f1239" stroke-width="1" opacity="0.7"/><circle cx="915.4" cy="311.5" r="5.5" fill="#9f1239" stroke="#fff" stroke-width="1.6"/><text x="903.4" y="318.5" text-anchor="end" fill="#9f1239" font-size="10" font-family="sans-serif">自由现金流首次转负</text></g>
+<g class="ev-marker us-ev" data-eid="googl_fcf_neg2" data-zoom="" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;单季 FCF 连续转负&quot;, &quot;fiscal&quot;: &quot;2026Q3&quot;, &quot;disclose&quot;: &quot;2026-10-29&quot;, &quot;mark_date&quot;: &quot;2026-10-29&quot;, &quot;prev2&quot;: [&quot;2026Q2 FCF −$5.9B&quot;, &quot;2026Q1 FCF $10.1B&quot;], &quot;curr&quot;: &quot;2026Q3 FCF −$9.1B&quot;, &quot;ocf&quot;: &quot;OCF $42.3B&quot;, &quot;capex&quot;: &quot;现金 CapEx $51.4B&quot;, &quot;price&quot;: 283.82, &quot;source&quot;: &quot;Alphabet 2026Q3 业绩披露；data/alphabet.csv&quot;, &quot;driver&quot;: &quot;CapEx 继续上升&quot;}" style="cursor:pointer"><title>自由现金流连续转负 · GOOGL · 2026Q3 · 标注日 2026-10-29 · 当日复权价 283.82</title><line x1="950.6" y1="314.7" x2="938.6" y2="335.7" stroke="#9f1239" stroke-width="1" opacity="0.7"/><circle cx="950.6" cy="314.7" r="5.5" fill="#9f1239" stroke="#fff" stroke-width="1.6"/><text x="938.6" y="339.7" text-anchor="end" fill="#9f1239" font-size="10" font-family="sans-serif">自由现金流连续转负</text></g>
 <circle cx="942.3" cy="80.0" r="4.5" fill="none" stroke="#0b5f6b" stroke-width="1.4" opacity="0.55"/>
 <circle cx="889.8" cy="303.3" r="4.5" fill="none" stroke="#9f1239" stroke-width="1.4" opacity="0.55"/>
 <circle cx="952.8" cy="318.1" r="4.5" fill="none" stroke="#b45309" stroke-width="1.4" opacity="0.55"/>
 </svg></div>
-  <p class="caption">NVIDIA 卖方 窗内高点 <span class="mono">2026-10-09</span>（归一化 3849）；其后最大回撤 -29%（2026-10-09→2026-11-13）；Alphabet 买方 窗内高点 <span class="mono">2026-05-20</span>（归一化 573）；其后最大回撤 -27%（2026-05-20→2026-10-29）；Microsoft 买方交叉 窗内高点 <span class="mono">2026-11-09</span>（归一化 360）；其后最大回撤 -4%（2026-11-09→2026-11-13）。已观察：NVIDIA GM 阶段高点（2024-05-22）、Alphabet FCF 2026Q2/Q3 转负。待验证：NVIDIA 收入峰、买方 CapEx 下调、HBM/封装与应用单位经济性拐点；股价「阶段高点」可能随新高后移。</p>
+    <p class="caption">Alphabet 股价曲线上的圆点对应该季业绩披露后的首个可交易日（2026Q2/Q3 均为披露当日已大幅反应）。点击可放大 ±60 交易日。</p>
+    <div class="layer-block" id="fund-nvda-gm">
+      <h4>上游供应商 — NVIDIA 毛利率</h4>
+      <div class="chart"><svg viewBox="0 0 860 240" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="fund-nvda-gm"  overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">上游卖方 NVIDIA：GAAP 毛利率 %</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">81</text>
+<line x1="48" y1="69.5" x2="836" y2="69.5" stroke="#e8e4da"/>
+<text x="42" y="73.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">75</text>
+<line x1="48" y1="103.0" x2="836" y2="103.0" stroke="#e8e4da"/>
+<text x="42" y="107.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">70</text>
+<line x1="48" y1="136.5" x2="836" y2="136.5" stroke="#e8e4da"/>
+<text x="42" y="140.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">64</text>
+<line x1="48" y1="170.0" x2="836" y2="170.0" stroke="#e8e4da"/>
+<text x="42" y="174.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">59</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.3" points="48.0,101.2 135.6,76.8 223.1,64.4 310.7,49.4 398.2,70.0 485.8,73.1 573.3,83.1 660.9,161.1 748.4,86.8 836.0,80.6"/>
+<circle cx="48.0" cy="101.2" r="3" fill="#0b5f6b"/>
+<circle cx="135.6" cy="76.8" r="3" fill="#0b5f6b"/>
+<circle cx="223.1" cy="64.4" r="3" fill="#0b5f6b"/>
+<circle cx="310.7" cy="49.4" r="3" fill="#0b5f6b"/>
+<circle cx="398.2" cy="70.0" r="3" fill="#0b5f6b"/>
+<circle cx="485.8" cy="73.1" r="3" fill="#0b5f6b"/>
+<circle cx="573.3" cy="83.1" r="3" fill="#0b5f6b"/>
+<circle cx="660.9" cy="161.1" r="3" fill="#0b5f6b"/>
+<circle cx="748.4" cy="86.8" r="3" fill="#0b5f6b"/>
+<circle cx="836.0" cy="80.6" r="3" fill="#0b5f6b"/>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;NVIDIA&quot;, &quot;event&quot;: &quot;毛利率阶段高点&quot;, &quot;fiscal&quot;: &quot;24Q2&quot;, &quot;curr&quot;: 78.4, &quot;source&quot;: &quot;data/nvidia.csv&quot;}" style="cursor:pointer"><line x1="310.7" y1="36" x2="310.7" y2="170" stroke="#b45309" stroke-dasharray="4 3" opacity="0.65"/><circle cx="310.7" cy="49.4" r="6" fill="#b45309" stroke="#fff" stroke-width="1.8"/><text x="318.7" y="39.4" fill="#b45309" font-size="11">毛利率阶段高点</text></g>
+<text x="48.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">23Q3</text>
+<text x="135.6" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">23Q4</text>
+<text x="223.1" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">24Q1</text>
+<text x="310.7" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">24Q2</text>
+<text x="398.2" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">24Q3</text>
+<text x="485.8" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">24Q4</text>
+<text x="573.3" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">25Q1</text>
+<text x="660.9" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">25Q2</text>
+<text x="748.4" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">25Q3</text>
+<text x="836.0" y="226" text-anchor="middle" fill="#5c5a55" font-size="10">25Q4</text>
+<rect x="48" y="179" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="188" fill="#333" font-size="11" font-family="sans-serif">毛利率 %</text>
+</svg></div>
+      <p class="footnote">收入与数据中心收入至样本最新季仍升，不支持「收入已见顶」。毛利额序列部分季度待补，图中以断点保留。</p>
+    </div>
+    <div class="layer-block" id="fund-alphabet-fcf">
+      <h4>采购与建设方 — Alphabet 集团 OCF / CapEx / FCF</h4>
+      
+<div class="fcf-panel" id="alphabet-fcf-panel-prices">
+  <div class="tabs fcf-tabs" role="tablist">
+    <a href="#alphabet-fcf-panel" class="on" data-fcf-mode="q">单季度</a>
+    <a href="#alphabet-fcf-panel" data-fcf-mode="ttm">滚动四季度</a>
+  </div>
+  <div class="chart fcf-chart" data-fcf-view="q"><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="alphabet-fcf-q-prices" data-mode="q" overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">Alphabet：单季度 OCF / 现金 CapEx / FCF（十亿美元）</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">60</text>
+<line x1="48" y1="84.5" x2="836" y2="84.5" stroke="#e8e4da"/>
+<text x="42" y="88.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">41</text>
+<line x1="48" y1="133.0" x2="836" y2="133.0" stroke="#e8e4da"/>
+<text x="42" y="137.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">23</text>
+<line x1="48" y1="181.5" x2="836" y2="181.5" stroke="#e8e4da"/>
+<text x="42" y="185.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">4</text>
+<line x1="48" y1="230.0" x2="836" y2="230.0" stroke="#e8e4da"/>
+<text x="42" y="234.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">-14</text>
+<line x1="48" y1="193.2" x2="836" y2="193.2" stroke="#9f1239" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="836" y="188.2" text-anchor="end" fill="#9f1239" font-size="11" font-weight="700">FCF 零线</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.3" points="48.0,143.5 119.6,117.4 191.3,123.2 262.9,112.5 334.5,90.4 406.2,98.1 477.8,120.2 549.5,65.9 621.1,55.4 692.7,72.8 764.4,90.5 836.0,82.0"/>
+<circle cx="48.0" cy="143.5" r="3" fill="#0b5f6b"/>
+<circle cx="119.6" cy="117.4" r="3" fill="#0b5f6b"/>
+<circle cx="191.3" cy="123.2" r="3" fill="#0b5f6b"/>
+<circle cx="262.9" cy="112.5" r="3" fill="#0b5f6b"/>
+<circle cx="334.5" cy="90.4" r="3" fill="#0b5f6b"/>
+<circle cx="406.2" cy="98.1" r="3" fill="#0b5f6b"/>
+<circle cx="477.8" cy="120.2" r="3" fill="#0b5f6b"/>
+<circle cx="549.5" cy="65.9" r="3" fill="#0b5f6b"/>
+<circle cx="621.1" cy="55.4" r="3" fill="#0b5f6b"/>
+<circle cx="692.7" cy="72.8" r="3" fill="#0b5f6b"/>
+<circle cx="764.4" cy="90.5" r="3" fill="#0b5f6b"/>
+<circle cx="836.0" cy="82.0" r="3" fill="#0b5f6b"/>
+<polyline fill="none" stroke="#6b7280" stroke-width="2.3" points="48.0,164.2 119.6,161.6 191.3,158.5 262.9,158.9 334.5,155.7 406.2,148.0 477.8,134.2 549.5,130.2 621.1,120.0 692.7,99.4 764.4,75.1 836.0,58.2"/>
+<circle cx="48.0" cy="164.2" r="3" fill="#6b7280"/>
+<circle cx="119.6" cy="161.6" r="3" fill="#6b7280"/>
+<circle cx="191.3" cy="158.5" r="3" fill="#6b7280"/>
+<circle cx="262.9" cy="158.9" r="3" fill="#6b7280"/>
+<circle cx="334.5" cy="155.7" r="3" fill="#6b7280"/>
+<circle cx="406.2" cy="148.0" r="3" fill="#6b7280"/>
+<circle cx="477.8" cy="134.2" r="3" fill="#6b7280"/>
+<circle cx="549.5" cy="130.2" r="3" fill="#6b7280"/>
+<circle cx="621.1" cy="120.0" r="3" fill="#6b7280"/>
+<circle cx="692.7" cy="99.4" r="3" fill="#6b7280"/>
+<circle cx="764.4" cy="75.1" r="3" fill="#6b7280"/>
+<circle cx="836.0" cy="58.2" r="3" fill="#6b7280"/>
+<polyline fill="none" stroke="#9f1239" stroke-width="2.3" points="48.0,172.5 119.6,148.9 191.3,157.8 262.9,146.8 334.5,127.9 406.2,143.4 477.8,179.3 549.5,128.9 621.1,128.7 692.7,166.6 764.4,208.6 836.0,217.1"/>
+<circle cx="48.0" cy="172.5" r="3" fill="#9f1239"/>
+<circle cx="119.6" cy="148.9" r="3" fill="#9f1239"/>
+<circle cx="191.3" cy="157.8" r="3" fill="#9f1239"/>
+<circle cx="262.9" cy="146.8" r="3" fill="#9f1239"/>
+<circle cx="334.5" cy="127.9" r="3" fill="#9f1239"/>
+<circle cx="406.2" cy="143.4" r="3" fill="#9f1239"/>
+<circle cx="477.8" cy="179.3" r="3" fill="#9f1239"/>
+<circle cx="549.5" cy="128.9" r="3" fill="#9f1239"/>
+<circle cx="621.1" cy="128.7" r="3" fill="#9f1239"/>
+<circle cx="692.7" cy="166.6" r="3" fill="#9f1239"/>
+<circle cx="764.4" cy="208.6" r="3" fill="#9f1239"/>
+<circle cx="836.0" cy="217.1" r="3" fill="#9f1239"/>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;单季 FCF 转负&quot;, &quot;fiscal&quot;: &quot;26Q2&quot;, &quot;period_end&quot;: &quot;2026-06-30&quot;, &quot;disclose&quot;: &quot;2026-07-23&quot;, &quot;mark_date&quot;: &quot;2026-07-23&quot;, &quot;price&quot;: 317.49, &quot;prev_fcf&quot;: 10.12, &quot;curr_fcf&quot;: -5.86, &quot;ocf&quot;: 39.07, &quot;capex&quot;: 44.92, &quot;formula&quot;: &quot;FCF = OCF − 现金 CapEx（正值=支出）&quot;, &quot;driver&quot;: &quot;CapEx 上升主导（OCF 仍强）&quot;, &quot;source&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;, &quot;filing&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;}" style="cursor:pointer"><line x1="764.4" y1="36" x2="764.4" y2="230" stroke="#9f1239" stroke-dasharray="4 3" opacity="0.65"/><circle cx="764.4" cy="208.6" r="6" fill="#9f1239" stroke="#fff" stroke-width="1.8"/><text x="772.4" y="198.6" fill="#9f1239" font-size="11">单季 FCF 转负</text></g>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;单季 FCF 连续转负&quot;, &quot;fiscal&quot;: &quot;26Q3&quot;, &quot;period_end&quot;: &quot;2026-09-30&quot;, &quot;disclose&quot;: &quot;2026-10-29&quot;, &quot;mark_date&quot;: &quot;2026-10-29&quot;, &quot;price&quot;: 283.82, &quot;prev_fcf&quot;: -5.86, &quot;curr_fcf&quot;: -9.06, &quot;ocf&quot;: 42.29, &quot;capex&quot;: 51.35, &quot;formula&quot;: &quot;FCF = OCF − 现金 CapEx（正值=支出）&quot;, &quot;driver&quot;: &quot;CapEx 上升主导（OCF 仍强）&quot;, &quot;source&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;, &quot;filing&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;}" style="cursor:pointer"><line x1="836.0" y1="36" x2="836.0" y2="230" stroke="#9f1239" stroke-dasharray="4 3" opacity="0.65"/><circle cx="836.0" cy="217.1" r="6" fill="#9f1239" stroke="#fff" stroke-width="1.8"/><text x="844.0" y="207.1" fill="#9f1239" font-size="11">连续转负</text></g>
+<text x="48.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">23Q4</text>
+<text x="119.6" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q1</text>
+<text x="191.3" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q2</text>
+<text x="262.9" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q3</text>
+<text x="334.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q4</text>
+<text x="406.2" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q1</text>
+<text x="477.8" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q2</text>
+<text x="549.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q3</text>
+<text x="621.1" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q4</text>
+<text x="692.7" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q1</text>
+<text x="764.4" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q2</text>
+<text x="836.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q3</text>
+<rect x="48" y="239" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="248" fill="#333" font-size="11" font-family="sans-serif">OCF ($B)</text>
+<rect x="128.0" y="239" width="10" height="10" fill="#6b7280"/>
+<text x="142.0" y="248" fill="#333" font-size="11" font-family="sans-serif">现金 CapEx ($B)</text>
+<rect x="249.5" y="239" width="10" height="10" fill="#9f1239"/>
+<text x="263.5" y="248" fill="#333" font-size="11" font-family="sans-serif">FCF ($B)</text>
+<text x="836" y="248" text-anchor="end" fill="#8a867c" font-size="10">FCF=OCF−现金CapEx</text>
+</svg></div>
+  <div class="chart fcf-chart" data-fcf-view="ttm" hidden><svg viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="fund-svg" id="alphabet-fcf-ttm-prices" data-mode="ttm" overflow="visible">
+<text x="48" y="18" fill="#5c5a55" font-size="12" font-family="sans-serif">Alphabet：滚动四季度 OCF / 现金 CapEx / FCF（十亿美元）</text>
+<line x1="48" y1="36.0" x2="836" y2="36.0" stroke="#e8e4da"/>
+<text x="42" y="40.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">208</text>
+<line x1="48" y1="84.5" x2="836" y2="84.5" stroke="#e8e4da"/>
+<text x="42" y="88.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">152</text>
+<line x1="48" y1="133.0" x2="836" y2="133.0" stroke="#e8e4da"/>
+<text x="42" y="137.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">97</text>
+<line x1="48" y1="181.5" x2="836" y2="181.5" stroke="#e8e4da"/>
+<text x="42" y="185.5" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">41</text>
+<line x1="48" y1="230.0" x2="836" y2="230.0" stroke="#e8e4da"/>
+<text x="42" y="234.0" text-anchor="end" fill="#8a867c" font-size="10" font-family="monospace">-15</text>
+<line x1="48" y1="217.1" x2="836" y2="217.1" stroke="#9f1239" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="836" y="212.1" text-anchor="end" fill="#9f1239" font-size="11" font-weight="700">FCF 零线</text>
+<polyline fill="none" stroke="#0b5f6b" stroke-width="2.3" points="262.9,125.6 334.5,108.0 406.2,101.6 477.8,100.6 549.5,85.2 621.1,73.7 692.7,65.3 764.4,55.4 836.0,60.7"/>
+<circle cx="262.9" cy="125.6" r="3" fill="#0b5f6b"/>
+<circle cx="334.5" cy="108.0" r="3" fill="#0b5f6b"/>
+<circle cx="406.2" cy="101.6" r="3" fill="#0b5f6b"/>
+<circle cx="477.8" cy="100.6" r="3" fill="#0b5f6b"/>
+<circle cx="549.5" cy="85.2" r="3" fill="#0b5f6b"/>
+<circle cx="621.1" cy="73.7" r="3" fill="#0b5f6b"/>
+<circle cx="692.7" cy="65.3" r="3" fill="#0b5f6b"/>
+<circle cx="764.4" cy="55.4" r="3" fill="#0b5f6b"/>
+<circle cx="836.0" cy="60.7" r="3" fill="#0b5f6b"/>
+<polyline fill="none" stroke="#6b7280" stroke-width="2.3" points="262.9,174.2 334.5,171.3 406.2,166.8 477.8,158.7 549.5,149.3 621.1,137.4 692.7,121.4 764.4,101.8 836.0,77.9"/>
+<circle cx="262.9" cy="174.2" r="3" fill="#6b7280"/>
+<circle cx="334.5" cy="171.3" r="3" fill="#6b7280"/>
+<circle cx="406.2" cy="166.8" r="3" fill="#6b7280"/>
+<circle cx="477.8" cy="158.7" r="3" fill="#6b7280"/>
+<circle cx="549.5" cy="149.3" r="3" fill="#6b7280"/>
+<circle cx="621.1" cy="137.4" r="3" fill="#6b7280"/>
+<circle cx="692.7" cy="121.4" r="3" fill="#6b7280"/>
+<circle cx="764.4" cy="101.8" r="3" fill="#6b7280"/>
+<circle cx="836.0" cy="77.9" r="3" fill="#6b7280"/>
+<polyline fill="none" stroke="#9f1239" stroke-width="2.3" points="262.9,168.5 334.5,153.7 406.2,151.9 477.8,159.0 549.5,153.0 621.1,153.3 692.7,161.0 764.4,170.7 836.0,199.9"/>
+<circle cx="262.9" cy="168.5" r="3" fill="#9f1239"/>
+<circle cx="334.5" cy="153.7" r="3" fill="#9f1239"/>
+<circle cx="406.2" cy="151.9" r="3" fill="#9f1239"/>
+<circle cx="477.8" cy="159.0" r="3" fill="#9f1239"/>
+<circle cx="549.5" cy="153.0" r="3" fill="#9f1239"/>
+<circle cx="621.1" cy="153.3" r="3" fill="#9f1239"/>
+<circle cx="692.7" cy="161.0" r="3" fill="#9f1239"/>
+<circle cx="764.4" cy="170.7" r="3" fill="#9f1239"/>
+<circle cx="836.0" cy="199.9" r="3" fill="#9f1239"/>
+<g class="fcf-ann" data-tipjson="{&quot;company&quot;: &quot;Alphabet&quot;, &quot;event&quot;: &quot;滚动四季 FCF 下降（仍为正）&quot;, &quot;fiscal&quot;: &quot;26Q3&quot;, &quot;period_end&quot;: &quot;2026-09-30&quot;, &quot;disclose&quot;: &quot;2026-10-29&quot;, &quot;mark_date&quot;: &quot;2026-10-29&quot;, &quot;price&quot;: 283.82, &quot;prev_fcf&quot;: 53.27, &quot;curr_fcf&quot;: 19.75, &quot;ocf&quot;: 179.55, &quot;capex&quot;: 159.8, &quot;formula&quot;: &quot;FCF = OCF − 现金 CapEx（正值=支出）&quot;, &quot;driver&quot;: &quot;CapEx 上升主导（OCF 仍强）&quot;, &quot;source&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;, &quot;filing&quot;: &quot;https://thefilingdesk.net/reports/alphabet-q3-fy2026/figures.csv (SEC EDGAR XBRL 10-Q derived)&quot;}" style="cursor:pointer"><line x1="836.0" y1="36" x2="836.0" y2="230" stroke="#a16207" stroke-dasharray="4 3" opacity="0.65"/><circle cx="836.0" cy="199.9" r="6" fill="#a16207" stroke="#fff" stroke-width="1.8"/><text x="844.0" y="189.9" fill="#a16207" font-size="11">滚动四季仍为正·下降</text></g>
+<text x="48.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">23Q4</text>
+<text x="119.6" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q1</text>
+<text x="191.3" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q2</text>
+<text x="262.9" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q3</text>
+<text x="334.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">24Q4</text>
+<text x="406.2" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q1</text>
+<text x="477.8" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q2</text>
+<text x="549.5" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q3</text>
+<text x="621.1" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">25Q4</text>
+<text x="692.7" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q1</text>
+<text x="764.4" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q2</text>
+<text x="836.0" y="286" text-anchor="middle" fill="#5c5a55" font-size="10">26Q3</text>
+<rect x="48" y="239" width="10" height="10" fill="#0b5f6b"/>
+<text x="62" y="248" fill="#333" font-size="11" font-family="sans-serif">滚动OCF ($B)</text>
+<rect x="150.0" y="239" width="10" height="10" fill="#6b7280"/>
+<text x="164.0" y="248" fill="#333" font-size="11" font-family="sans-serif">滚动现金 CapEx ($B)</text>
+<rect x="293.5" y="239" width="10" height="10" fill="#9f1239"/>
+<text x="307.5" y="248" fill="#333" font-size="11" font-family="sans-serif">滚动 FCF ($B)</text>
+<text x="836" y="248" text-anchor="end" fill="#8a867c" font-size="10">前三季滚动值缺，断点保留</text>
+</svg></div>
+  <p class="caption">公式 <span class="mono">FCF = OCF − 现金 CapEx</span>（CapEx 以正值表示支出）。核对结果：<strong>单季 FCF 于 2026Q2 首次转负</strong>（−$5.9B），2026Q3 再负（−$9.1B）；同期 OCF 仍为正，主因 CapEx 加速。<strong>滚动四季度 FCF 至 2026Q3 仍为正</strong>（约 $19.7B），但已较 2026Q2 的 $53.3B 明显下降。悬停/点击红点查看财季、披露日、前后 FCF、OCF/CapEx 与股价。</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>标记</th><th>单季度</th><th>滚动四季度</th><th>状态</th></tr></thead>
+    <tbody>
+      <tr><td>FCF 开始转弱</td><td>2025Q2 $5.3B（相对 2024Q4 $24.8B）</td><td>2025Q2 起滚动高位回落</td><td>已观察</td></tr>
+      <tr class="neg"><td>首次转负</td><td>2026Q2（披露 2026-07-23）</td><td>—</td><td>单季已确认；滚动四季未转负</td></tr>
+      <tr class="neg"><td>连续转负</td><td>2026Q3（披露 2026-10-29）</td><td>—</td><td>单季已确认</td></tr>
+      <tr class="open"><td>滚动四季转负</td><td>—</td><td>至 2026Q3 仍为正（$19.7B）</td><td>尚未；标注为下降</td></tr>
+      <tr class="open"><td>CapEx 指引下调 / 实际收缩</td><td>—</td><td>—</td><td>尚未；现金 CapEx 仍升</td></tr>
+    </tbody>
+  </table></div>
+  <p class="footnote">表中「—」= 该口径下未发生或缺少可比结论。滚动四季前三个观察点因窗口不足而断点留空，不插值。</p>
+</div>
 
-  <h3>6.4 股价高点 vs 基本面信号：季度间隔与披露滞后</h3>
-  <p>「滞后期」= 股价高点日期 − 基本面财季/披露日。负值表示<strong>股价更早</strong>。</p>
+      <details class="more"><summary>展开：Microsoft 交叉样本</summary>
+        <p>Microsoft 现金 CapEx 升、FCF 仍正（FY26Q2 FCF 约 $5.9B）。与 Alphabet「已转负」不同步，作买方交叉对照，不替代 Alphabet 主样本。</p>
+      </details>
+    </div>
+    <div class="layer-block">
+      <h4>下游应用 / 终端需求</h4>
+      <p>自动驾驶付费、机器人部署、AI 软件扣推理成本毛利等序列待补；本页不以猜测填空。</p>
+      <p class="footnote">应用层缺数不影响已确认的 NVIDIA GM 阶段高点与 Alphabet 单季 FCF 转负结论。CapEx 指引下调尚未确认。</p>
+    </div>
+  </div>
+
+  <h3 id="price-lags">6.4 股价高点 vs 基本面：间隔与披露滞后</h3>
+<p>「滞后期」= 股价高点日期 − 基本面财季/披露日。负值表示<strong>股价更早</strong>。</p>
   <div class="table-wrap"><table>
     <thead><tr><th>周期</th><th>股价事件</th><th>股价日期</th><th>基本面事件</th><th>披露/财季日</th><th>相隔季度</th><th>相隔天数</th><th>备注</th></tr></thead>
     <tbody>
@@ -603,7 +1155,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
     </tbody>
   </table></div>
 
-  <h3>6.5 局部放大：公告 ±60 交易日</h3>
+  <h3 id="zoom-panel">6.5 局部放大：公告 ±60 交易日</h3>
   <p>默认收起；点击上方事件，或使用按钮切换。</p>
   <div class="tabs" id="zoom-tabs">
     <a href="#zoom-panel" data-zoom="cisco_gm_peak" class="on">Cisco GM峰</a>
@@ -696,6 +1248,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
     drawZoom('cisco_gm_peak');
   })();
   </script>
+
 </section>
 
 <section class="block" id="answers">
@@ -759,16 +1312,20 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
 (function(){
   const tip=document.getElementById('ev-tooltip');
   function render(data){
+    const prev = Array.isArray(data.prev2) ? (data.prev2[0]+'<br>'+data.prev2[1]) : (data.prev_fcf!=null?String(data.prev_fcf):'—');
+    const curr = data.curr!=null ? data.curr : (data.curr_fcf!=null?data.curr_fcf:'—');
     tip.innerHTML =
       '<div><strong>'+data.company+'</strong> · '+data.event+'</div>'+
-      '<div class="k">层级</div><div>'+data.layer+'</div>'+
-      '<div class="k">财季 / 指标</div><div>'+data.fiscal+'<br>'+data.metric+'</div>'+
-      '<div class="k">前后两期 → 当期</div><div>'+data.prev2[0]+'<br>'+data.prev2[1]+'<br><strong>'+data.curr+'</strong></div>'+
-      '<div class="k">披露 / 确认 / 标注日</div><div>披露 '+data.disclose+'<br>确认 '+data.confirm+'<br>图上标注 '+data.mark_date+(data.price!=null?' · 股价 '+data.price:'')+'</div>'+
+      (data.layer?('<div class="k">层级</div><div>'+data.layer+'</div>'):'')+
+      '<div class="k">财季 / 指标</div><div>'+(data.fiscal||'')+(data.metric?('<br>'+data.metric):'')+'</div>'+
+      '<div class="k">前后两期 → 当期</div><div>'+prev+'<br><strong>'+curr+'</strong></div>'+
+      ((data.ocf||data.capex)?('<div class="k">OCF / 现金 CapEx</div><div>'+(data.ocf||'—')+' · '+(data.capex||'—')+'</div>'):'')+
+      (data.driver?('<div class="k">驱动</div><div>'+data.driver+'</div>'):'')+
+      '<div class="k">披露 / 确认 / 标注日</div><div>披露 '+(data.disclose||'—')+(data.confirm?('<br>确认 '+data.confirm):'')+'<br>图上标注 '+(data.mark_date||'—')+(data.price!=null?' · 股价 '+data.price:'')+'</div>'+
       (data.confirm_note?('<div class="k">确认说明</div><div>'+data.confirm_note+'</div>'):'')+
-      '<div class="k">相对纳指见顶 2000-03-10</div><div><strong>'+data.vs_nasdaq+'</strong> · '+data.lag_nasdaq+'</div>'+
-      '<div class="k">相对本公司股价阶段高点 '+data.company_peak+'</div><div>'+data.lag_company_peak+'</div>'+
-      '<div class="k">来源</div><div>'+data.source+'</div>';
+      (data.vs_nasdaq?('<div class="k">相对纳指见顶 2000-03-10</div><div><strong>'+data.vs_nasdaq+'</strong> · '+data.lag_nasdaq+'</div>'):'')+
+      (data.company_peak?('<div class="k">相对本公司股价阶段高点 '+data.company_peak+'</div><div>'+data.lag_company_peak+'</div>'):'')+
+      '<div class="k">来源</div><div>'+(data.source||'')+'</div>';
   }
   function showAt(evt, data){
     render(data); tip.classList.add('show');
@@ -779,7 +1336,7 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
     tip.style.left=x+'px'; tip.style.top=y+'px';
   }
   function hide(){ tip.classList.remove('show'); }
-  document.querySelectorAll('#chart-us .us-ev').forEach(g=>{
+  document.querySelectorAll('#chart-us .us-ev, #chart-ai .us-ev').forEach(g=>{
     const raw=g.getAttribute('data-tipjson'); if(!raw) return;
     let data; try{ data=JSON.parse(raw); }catch(e){ return; }
     g.addEventListener('mouseenter', e=>showAt(e,data));
@@ -796,7 +1353,120 @@ footer{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);color:v
       setTimeout(hide, 8000);
     });
   });
-  document.addEventListener('click', e=>{ if(!e.target.closest('.us-ev') && !e.target.closest('#ev-tooltip')) hide(); });
+  document.addEventListener('click', e=>{ if(!e.target.closest('.us-ev') && !e.target.closest('.fcf-ann') && !e.target.closest('#ev-tooltip')) hide(); });
+})();
+</script>
+
+
+<script>
+(function(){
+  // FCF Q / TTM toggle
+  document.querySelectorAll('.fcf-panel').forEach(panel=>{
+    const tabs=panel.querySelectorAll('[data-fcf-mode]');
+    const views=panel.querySelectorAll('[data-fcf-view]');
+    tabs.forEach(tab=>{
+      tab.addEventListener('click', e=>{
+        e.preventDefault();
+        const mode=tab.getAttribute('data-fcf-mode');
+        tabs.forEach(t=>t.classList.toggle('on', t===tab));
+        views.forEach(v=>{ v.hidden = v.getAttribute('data-fcf-view')!==mode; });
+      });
+    });
+  });
+
+  // Timeline jump: highlight target + scroll
+  document.querySelectorAll('.timeline a.tl').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const jump=a.getAttribute('data-jump');
+      const eid=a.getAttribute('data-eid');
+      if(jump){
+        const el=document.getElementById(jump);
+        if(el){ setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}), 50); }
+      }
+      if(eid){
+        const g=document.querySelector('[data-eid="'+eid+'"]');
+        if(g){
+          g.classList.add('pulse');
+          setTimeout(()=>g.classList.remove('pulse'), 1600);
+        }
+      }
+    });
+  });
+
+  // Shared tooltip for FCF annotations
+  const tip=document.getElementById('ev-tooltip');
+  function showFcf(evt, data){
+    if(!tip) return;
+    tip.innerHTML =
+      '<div><strong>'+(data.company||'')+'</strong> · '+(data.event||'')+'</div>'+
+      '<div class="k">财季</div><div>'+(data.fiscal||'')+'</div>'+
+      '<div class="k">披露 / 标注日</div><div>披露 '+(data.disclose||'—')+'<br>标注 '+(data.mark_date||'—')+(data.price!=null?' · 股价 '+data.price:'')+'</div>'+
+      '<div class="k">前后 FCF → 当期</div><div>'+(data.prev_fcf!=null?data.prev_fcf:'—')+' → <strong>'+(data.curr_fcf!=null?data.curr_fcf:'—')+'</strong></div>'+
+      '<div class="k">OCF / 现金 CapEx</div><div>OCF '+(data.ocf!=null?data.ocf:'—')+' · CapEx '+(data.capex!=null?data.capex:'—')+'</div>'+
+      (data.driver?('<div class="k">驱动</div><div>'+data.driver+'</div>'):'')+
+      '<div class="k">公式 / 来源</div><div>'+(data.formula||'')+'<br>'+(data.source||'')+'</div>'+
+      (data.filing?('<div class="k">财报</div><div><a style="color:#93c5fd" href="'+data.filing+'" target="_blank" rel="noopener">打开来源</a></div>'):'');
+    tip.classList.add('show');
+    const cx=evt.clientX||0, cy=evt.clientY||0;
+    tip.style.left=Math.min(window.innerWidth-360, Math.max(8, cx+14))+'px';
+    tip.style.top=Math.min(window.innerHeight-20, Math.max(8, cy+14))+'px';
+  }
+  document.querySelectorAll('.fcf-ann').forEach(g=>{
+    const raw=g.getAttribute('data-tipjson'); if(!raw) return;
+    let data; try{data=JSON.parse(raw)}catch(e){return}
+    g.addEventListener('mouseenter', e=>showFcf(e,data));
+    g.addEventListener('mousemove', e=>showFcf(e,data));
+    g.addEventListener('mouseleave', ()=>tip && tip.classList.remove('show'));
+    g.addEventListener('click', e=>{e.preventDefault();e.stopPropagation();showFcf(e,data); setTimeout(()=>tip&&tip.classList.remove('show'), 8000);});
+  });
+})();
+</script>
+<style>
+.ev-marker.pulse circle{r:8;stroke-width:2.4}
+.layer-block:target{outline:2px solid #9ec5c9;outline-offset:2px}
+</style>
+
+
+<script>
+(function(){
+  function parseISO(s){ const [y,m,d]=s.split('-').map(Number); return Date.UTC(y,m-1,d); }
+  function fmt(ms){ const d=new Date(ms); return d.toISOString().slice(0,10); }
+  document.querySelectorAll('.case-panel').forEach(panel=>{
+    const svg=panel.querySelector('.long-price-svg');
+    const readout=panel.querySelector('.sync-readout');
+    if(!svg||!readout) return;
+    const start=svg.getAttribute('data-start'), end=svg.getAttribute('data-end');
+    if(!start||!end) return;
+    const t0=parseISO(start), t1=parseISO(end);
+    function onMove(e){
+      const pt=svg.createSVGPoint();
+      pt.x=e.clientX; pt.y=e.clientY;
+      const ctm=svg.getScreenCTM(); if(!ctm) return;
+      const loc=pt.matrixTransform(ctm.inverse());
+      const vb=svg.viewBox.baseVal; const pl=54, pr=28;
+      const x0=pl, x1=vb.width-pr;
+      let r=(loc.x-x0)/(x1-x0); r=Math.max(0,Math.min(1,r));
+      const t=t0+r*(t1-t0);
+      readout.hidden=false;
+      readout.querySelector('.mono').textContent=fmt(t);
+      panel.querySelectorAll('.fund-svg').forEach(fs=>{
+        let line=fs.querySelector('.sync-line');
+        if(!line){
+          line=document.createElementNS('http://www.w3.org/2000/svg','line');
+          line.setAttribute('class','sync-line');
+          line.setAttribute('y1','36'); line.setAttribute('y2', String(fs.viewBox.baseVal.height-70));
+          fs.appendChild(line);
+        }
+        // map same ratio onto fund chart
+        const fpl=48, fpr=24; const fw=fs.viewBox.baseVal.width;
+        const fx=fpl+r*((fw-fpr)-fpl);
+        line.setAttribute('x1', fx); line.setAttribute('x2', fx);
+      });
+    }
+    function onLeave(){ readout.hidden=true; panel.querySelectorAll('.sync-line').forEach(l=>l.remove()); }
+    svg.addEventListener('mousemove', onMove);
+    svg.addEventListener('mouseleave', onLeave);
+  });
 })();
 </script>
 
