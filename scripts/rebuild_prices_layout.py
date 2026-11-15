@@ -109,7 +109,10 @@ def svg_series_chart(
     if zero_line and ymin < 0 < ymax:
         zy = y(0)
         parts.append(f'<line x1="{pl}" y1="{zy:.1f}" x2="{w-pr}" y2="{zy:.1f}" stroke="#9f1239" stroke-width="1.6" stroke-dasharray="5 4"/>')
-        parts.append(f'<text x="{w-pr}" y="{zy-5:.1f}" text-anchor="end" fill="#9f1239" font-size="11" font-weight="700">FCF 零线</text>')
+        # Left-axis "0" tick only — no right-edge text that clips the chart
+        parts.append(
+            f'<text x="{pl-6}" y="{zy+4:.1f}" text-anchor="end" fill="#9f1239" font-size="10" font-family="monospace" font-weight="700">0</text>'
+        )
 
     for name, color, vs in series:
         pts = []
@@ -787,7 +790,7 @@ details.more summary{cursor:pointer;color:var(--accent)}
 
     # sanity
     assert 'id="prices"' in html
-    assert "FCF 零线" in html
+    assert html.count('font-weight="700">0</text>') >= 1 or ">0</text>" in html
     assert "滚动四季度" in html
     assert "case-us" in html and "case-ai" in html
     assert html.count('id="alphabet-fcf-panel"') == 1
